@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/TestController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="userSettingsFile" value="D:\SoftWareSpace\Java\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2MPfQzY711X94z394BpWNmNHhAd" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -39,7 +47,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -58,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ApiPassengerApplication">
     <configuration name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-passenger" />
       <extension name="coverage">
@@ -68,6 +76,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.application.ApiPassengerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceVerificationcodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-verificationcode" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.serviceverificationcode.ServiceVerificationcodeApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677674125778</updated>
       <workItem from="1677674126936" duration="604000" />
-      <workItem from="1677850933449" duration="4590000" />
+      <workItem from="1677850933449" duration="5489000" />
     </task>
     <servers />
   </component>
