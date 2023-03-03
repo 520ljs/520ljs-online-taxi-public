@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/VerificationCodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/request/VerificationCodeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/api-passenger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/api-passenger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/online-taxi-public.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/online-taxi-public.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677674125778</updated>
       <workItem from="1677674126936" duration="604000" />
-      <workItem from="1677850933449" duration="3531000" />
+      <workItem from="1677850933449" duration="4590000" />
     </task>
     <servers />
   </component>
