@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/ApiPassengerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/api-passenger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/api-passenger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +45,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="api-passenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ss.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.application.ApiPassengerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApiPassengerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677674125778</updated>
       <workItem from="1677674126936" duration="604000" />
-      <workItem from="1677850933449" duration="913000" />
+      <workItem from="1677850933449" duration="1423000" />
     </task>
     <servers />
   </component>
