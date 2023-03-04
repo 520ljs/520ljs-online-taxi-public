@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/NumberCodeResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/api-passenger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/api-passenger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/online-taxi-public.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/online-taxi-public.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NumberCodeController" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
+        <item itemvalue="Application.NumberCodeController" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +122,7 @@
       <updated>1677674125778</updated>
       <workItem from="1677674126936" duration="604000" />
       <workItem from="1677850933449" duration="6110000" />
-      <workItem from="1677918774481" duration="4543000" />
+      <workItem from="1677918774481" duration="5277000" />
     </task>
     <servers />
   </component>
