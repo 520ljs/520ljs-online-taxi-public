@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +67,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ServiceVerificationcodeApplication">
+    <configuration name="NumberCodeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ss.serviceverificationcode.controller.NumberCodeController" />
+      <module name="service-verificationcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ss.serviceverificationcode.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-passenger" />
       <extension name="coverage">
@@ -93,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NumberCodeController" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
       </list>
     </recent_temporary>
@@ -109,7 +119,7 @@
       <updated>1677674125778</updated>
       <workItem from="1677674126936" duration="604000" />
       <workItem from="1677850933449" duration="6110000" />
-      <workItem from="1677918774481" duration="865000" />
+      <workItem from="1677918774481" duration="1426000" />
     </task>
     <servers />
   </component>
