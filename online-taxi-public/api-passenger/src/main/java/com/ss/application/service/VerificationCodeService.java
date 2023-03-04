@@ -21,7 +21,7 @@ public class VerificationCodeService {
     public String generatorCode(String passengerPhone) {
         // 通过调用验证码服务，获取验证码
         System.out.println("调用验证码服务，获取验证码");
-        ResponseResult<NumberCodeResponse> numberCodeResponse = serviceVerificationcodeClient.getNumberCode();
+        ResponseResult<NumberCodeResponse> numberCodeResponse = serviceVerificationcodeClient.getNumberCode(6);
         int numberCode = numberCodeResponse.getData().getNumberCode();
         System.out.println("remote number code：" + numberCode);
 
