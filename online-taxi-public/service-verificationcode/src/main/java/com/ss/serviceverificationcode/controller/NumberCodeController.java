@@ -18,11 +18,10 @@ public class NumberCodeController {
     public ResponseResult numberCode(@PathVariable("size") int size) {
         System.out.println("size：" + size);
         // 生成验证码
-        // 获取随机数
         double mathRandom = (Math.random() * 9 + 1) * (Math.pow(10, size - 1));
         System.out.println(mathRandom);
         int resultInt = (int) mathRandom;
-        System.out.println(resultInt);
+        System.out.println("generator src code" + resultInt);
 
         /*JSONObject result = new JSONObject();
         result.put("code", 1);
