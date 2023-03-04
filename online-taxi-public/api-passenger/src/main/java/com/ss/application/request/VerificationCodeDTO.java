@@ -1,18 +1,16 @@
 package com.ss.application.request;
 
+import lombok.Data;
+
 /**
  * @Auther: ljy.s
  * @Date: 2023/3/3 - 03 - 03 - 22:34
  */
+@Data
 public class VerificationCodeDTO {
 
     private String passengerPhone;
 
-    public String getPassengerPhone() {
-        return passengerPhone;
-    }
+    private String verificationCode;
 
-    public void setPassengerPhone(String passengerPhone) {
-        this.passengerPhone = passengerPhone;
-    }
 }
