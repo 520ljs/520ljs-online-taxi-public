@@ -1,19 +1,14 @@
 package com.ss.application.service;
 
 import com.ss.application.remote.ServiceVerificationcodeClient;
-import com.ss.application.request.VerificationCodeDTO;
 import com.ss.internalcommon.constant.CommonStatusEnum;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.response.NumberCodeResponse;
 import com.ss.internalcommon.response.TokenResponse;
-import net.sf.json.JSON;
-import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.concurrent.TimeUnit;
 

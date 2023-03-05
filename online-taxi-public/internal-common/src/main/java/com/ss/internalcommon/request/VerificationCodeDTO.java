@@ -1,10 +1,10 @@
-package com.ss.application.request;
+package com.ss.internalcommon.request;
 
 import lombok.Data;
 
 /**
  * @Auther: ljy.s
- * @Date: 2023/3/3 - 03 - 03 - 22:34
+ * @Date: 2023/3/5 - 03 - 05 - 20:35
  */
 @Data
 public class VerificationCodeDTO {

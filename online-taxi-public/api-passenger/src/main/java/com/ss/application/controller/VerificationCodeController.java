@@ -1,8 +1,8 @@
 package com.ss.application.controller;
 
-import com.ss.application.request.VerificationCodeDTO;
 import com.ss.application.service.VerificationCodeService;
 import com.ss.internalcommon.dto.ResponseResult;
+import com.ss.internalcommon.request.VerificationCodeDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
