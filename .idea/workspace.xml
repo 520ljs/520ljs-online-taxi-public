@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/request/VerificationCodeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/VerificationCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/request/VerificationCodeDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/dto/PassengerUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/mapper/PassengerUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/ServicePassengerUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/ServicePassengerUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +25,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -133,7 +134,7 @@
       <workItem from="1677674126936" duration="604000" />
       <workItem from="1677850933449" duration="6110000" />
       <workItem from="1677918774481" duration="13669000" />
-      <workItem from="1678015451004" duration="3392000" />
+      <workItem from="1678015451004" duration="5782000" />
     </task>
     <servers />
   </component>
