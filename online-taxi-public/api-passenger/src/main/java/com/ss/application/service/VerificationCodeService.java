@@ -66,9 +66,6 @@ public class VerificationCodeService {
         // 通过短信服务商，将对应的验证码发送到手机上。阿里短信服务，腾讯短信通，华信，容联
 
         // 返回值
-        /*JSONObject result = new JSONObject();
-        result.put("code", 1);
-        result.put("message", "success");*/
         return ResponseResult.success("");
     }
 

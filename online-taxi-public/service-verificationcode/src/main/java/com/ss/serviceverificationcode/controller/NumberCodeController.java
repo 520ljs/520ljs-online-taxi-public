@@ -23,13 +23,6 @@ public class NumberCodeController {
         int resultInt = (int) mathRandom;
         System.out.println("generator src code" + resultInt);
 
-        /*JSONObject result = new JSONObject();
-        result.put("code", 1);
-        result.put("message", "success");
-        JSONObject data = new JSONObject();
-        data.put("numberCode", resultInt);
-        result.put("data", data);*/
-
         // 定义返回值
         NumberCodeResponse response = new NumberCodeResponse();
         response.setNumberCode(resultInt);

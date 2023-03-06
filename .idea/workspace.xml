@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/remote/ServicePassengerUserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/api-passenger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/api-passenger.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/internal-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/internal-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/online-taxi-public.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/online-taxi-public.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +74,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceVerificationcodeApplication">
+  <component name="RunManager" selected="Application.JwtUtils">
+    <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ss.internalcommon.util.JwtUtils" />
+      <module name="internal-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ss.internalcommon.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NumberCodeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceverificationcode.controller.NumberCodeController" />
       <module name="service-verificationcode" />
@@ -112,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JwtUtils" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Application.NumberCodeController" />
       </list>
@@ -131,7 +150,7 @@
       <workItem from="1677850933449" duration="6110000" />
       <workItem from="1677918774481" duration="13669000" />
       <workItem from="1678015451004" duration="5883000" />
-      <workItem from="1678108032858" duration="4753000" />
+      <workItem from="1678108032858" duration="6584000" />
     </task>
     <servers />
   </component>
