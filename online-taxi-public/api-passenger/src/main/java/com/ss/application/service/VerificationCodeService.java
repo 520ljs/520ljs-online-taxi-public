@@ -3,10 +3,12 @@ package com.ss.application.service;
 import com.ss.application.remote.ServicePassengerUserClient;
 import com.ss.application.remote.ServiceVerificationcodeClient;
 import com.ss.internalcommon.constant.CommonStatusEnum;
+import com.ss.internalcommon.constant.IdentityConstants;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.VerificationCodeDTO;
 import com.ss.internalcommon.response.NumberCodeResponse;
 import com.ss.internalcommon.response.TokenResponse;
+import com.ss.internalcommon.util.JwtUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -100,12 +102,12 @@ public class VerificationCodeService {
         verificationCodeDTO.setPassengerPhone(passengerPhone);
         servicePassengerUserClient.loginOrRegister(verificationCodeDTO);
 
-        // 颁发令牌
-        System.out.println("颁发令牌");
+        // 颁发令牌，不应该用魔法值，用常量
+        String token = JwtUtils.generatorToken(passengerPhone, IdentityConstants.PASSENGER_IDENTITY);
 
         // 返回响应
         TokenResponse tokenResponse = new TokenResponse();
-        tokenResponse.setToken("token value");
+        tokenResponse.setToken(token);
         return ResponseResult.success(tokenResponse);
     }
 

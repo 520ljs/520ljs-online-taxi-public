@@ -5,6 +5,8 @@ import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
+import com.ss.internalcommon.dto.TokenResult;
+import com.sun.scenario.effect.Identity;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -20,15 +22,19 @@ public class JwtUtils {
     // 盐
     private static final String SIGN = "520ljs@520ljs";
 
-    // JWT_KEY
-    private static final String JWT_KEY = "passengerPhone";
+    // JWT_KEY 司机或乘客的手机号
+    private static final String JWT_KEY_PHONE = "phone";
+
+    // 乘客是1，司机是2
+    private static final String JWT_KEY_IDENTITY = "identity";
 
     // 生成token
-    public static String generatorToken(String passengerPhone) {
+    public static String generatorToken(String passengerPhone, String identity) {
         // 整个系统中只要一个token就够了，Jwt就这一种生成方式
         Map<String, String> map = new HashMap<>();
         // 传入手机号
-        map.put(JWT_KEY, passengerPhone);
+        map.put(JWT_KEY_PHONE, passengerPhone);
+        map.put(JWT_KEY_IDENTITY, identity);
 
         // token过期时间 1天
         Calendar calendar = Calendar.getInstance();
@@ -53,16 +59,28 @@ public class JwtUtils {
     }
 
     // 解析token
-    public static String parseToken(String token) {
+    public static TokenResult parseToken(String token) {
+        // 解析token
         DecodedJWT verify = JWT.require(Algorithm.HMAC256(SIGN)).build().verify(token);
-        Claim claim = verify.getClaim(JWT_KEY);
-        return claim.toString();
+
+        // 封装信息
+        String phone = verify.getClaim(JWT_KEY_PHONE).asString();
+        String identity = verify.getClaim(JWT_KEY_IDENTITY).asString();
+
+        // 返回token信息
+        TokenResult tokenResult = new TokenResult();
+        tokenResult.setPhone(phone);
+        tokenResult.setIdentity(identity);
+        return tokenResult;
     }
 
 
     public static void main(String[] args) {
-        String s = generatorToken("18369874587");
+        String s = generatorToken("18369874587", "1");
         System.out.println("生成的token：" + s);
-        System.out.println("解析token后的值：" + parseToken(s));
+        System.out.println("解析-----------------");
+        TokenResult tokenResult = parseToken(s);
+        System.out.println("手机号：" + tokenResult.getPhone());
+        System.out.println("身份：" + tokenResult.getIdentity());
     }
 }
