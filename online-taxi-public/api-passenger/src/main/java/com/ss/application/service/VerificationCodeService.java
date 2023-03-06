@@ -1,8 +1,10 @@
 package com.ss.application.service;
 
+import com.ss.application.remote.ServicePassengerUserClient;
 import com.ss.application.remote.ServiceVerificationcodeClient;
 import com.ss.internalcommon.constant.CommonStatusEnum;
 import com.ss.internalcommon.dto.ResponseResult;
+import com.ss.internalcommon.request.VerificationCodeDTO;
 import com.ss.internalcommon.response.NumberCodeResponse;
 import com.ss.internalcommon.response.TokenResponse;
 import org.apache.commons.lang.StringUtils;
@@ -27,6 +29,9 @@ public class VerificationCodeService {
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
+
+    @Autowired
+    private ServicePassengerUserClient servicePassengerUserClient;
 
     /**
      * 根据手机号，生成key
@@ -94,7 +99,9 @@ public class VerificationCodeService {
         }
 
         // 判断原来是否有用户，并进行对应的处理
-        System.out.println("判断原来是否有用户，并进行对应的处理");
+        VerificationCodeDTO verificationCodeDTO = new VerificationCodeDTO();
+        verificationCodeDTO.setPassengerPhone(passengerPhone);
+        servicePassengerUserClient.loginOrRegister(verificationCodeDTO);
 
         // 颁发令牌
         System.out.println("颁发令牌");

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/ServicePassengerUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/ServicePassengerUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/remote/ServicePassengerUserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServicePassengerUserApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceVerificationcodeApplication">
     <configuration name="NumberCodeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceverificationcode.controller.NumberCodeController" />
       <module name="service-verificationcode" />
@@ -132,7 +131,7 @@
       <workItem from="1677850933449" duration="6110000" />
       <workItem from="1677918774481" duration="13669000" />
       <workItem from="1678015451004" duration="5883000" />
-      <workItem from="1678108032858" duration="3571000" />
+      <workItem from="1678108032858" duration="4753000" />
     </task>
     <servers />
   </component>
