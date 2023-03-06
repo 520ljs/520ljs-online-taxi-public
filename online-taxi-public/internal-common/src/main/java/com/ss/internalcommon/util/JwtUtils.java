@@ -3,6 +3,8 @@ package com.ss.internalcommon.util;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.Claim;
+import com.auth0.jwt.interfaces.DecodedJWT;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -18,8 +20,16 @@ public class JwtUtils {
     // 盐
     private static final String SIGN = "520ljs@520ljs";
 
+    // JWT_KEY
+    private static final String JWT_KEY = "passengerPhone";
+
     // 生成token
-    public static String generatorToken(Map<String, String> map) {
+    public static String generatorToken(String passengerPhone) {
+        // 整个系统中只要一个token就够了，Jwt就这一种生成方式
+        Map<String, String> map = new HashMap<>();
+        // 传入手机号
+        map.put(JWT_KEY, passengerPhone);
+
         // token过期时间 1天
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DATE, 1);
@@ -43,13 +53,16 @@ public class JwtUtils {
     }
 
     // 解析token
+    public static String parseToken(String token) {
+        DecodedJWT verify = JWT.require(Algorithm.HMAC256(SIGN)).build().verify(token);
+        Claim claim = verify.getClaim(JWT_KEY);
+        return claim.toString();
+    }
 
 
     public static void main(String[] args) {
-        Map<String, String> map = new HashMap<>();
-        map.put("name", "bql xnh");
-        map.put("age", "3");
-        String s = generatorToken(map);
+        String s = generatorToken("18369874587");
         System.out.println("生成的token：" + s);
+        System.out.println("解析token后的值：" + parseToken(s));
     }
 }
