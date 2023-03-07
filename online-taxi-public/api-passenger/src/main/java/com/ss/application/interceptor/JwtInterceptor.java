@@ -25,7 +25,9 @@ public class JwtInterceptor implements HandlerInterceptor {
         boolean result = true; // 返回值
         String resultString = ""; // 错误信息
 
+        // 获取token
         String token = request.getHeader("Authorization");
+
         try {
             JwtUtils.parseToken(token);// 解析token
         } catch (SignatureVerificationException e) {
