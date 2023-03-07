@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/JwtInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/JwtInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/JwtUtils.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiPassengerApplication">
+  <component name="RunManager" selected="Compound.乘客用户服务中心系列">
     <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.internalcommon.util.JwtUtils" />
       <module name="internal-common" />
@@ -99,7 +99,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="乘客用户服务中心系列" type="CompoundRunConfigurationType">
+      <toRun name="ServiceVerificationcodeApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ServicePassengerUserApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="ServiceVerificationcodeApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ServicePassengerUserApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-passenger" />
       <extension name="coverage">
         <pattern>
@@ -126,9 +138,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.JwtUtils" />
+      <item itemvalue="Application.NumberCodeController" />
+      <item itemvalue="Compound.乘客用户服务中心系列" />
+      <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
+      <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
+      <item itemvalue="Spring Boot.ApiPassengerApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Application.JwtUtils" />
         <item itemvalue="Application.NumberCodeController" />
       </list>
@@ -151,7 +170,7 @@
       <workItem from="1678108032858" duration="10105000" />
       <workItem from="1678163225205" duration="1754000" />
       <workItem from="1678177993332" duration="27000" />
-      <workItem from="1678184620605" duration="5902000" />
+      <workItem from="1678184620605" duration="9324000" />
     </task>
     <servers />
   </component>
