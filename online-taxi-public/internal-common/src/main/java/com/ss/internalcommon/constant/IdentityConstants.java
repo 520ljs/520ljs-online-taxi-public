@@ -4,6 +4,10 @@ package com.ss.internalcommon.constant;
  * @Auther: ljy.s
  * @Date: 2023/3/7 - 03 - 07 - 0:22
  */
+
+/**
+ * 乘客常量类
+ */
 public class IdentityConstants {
 
     // 乘客身份
