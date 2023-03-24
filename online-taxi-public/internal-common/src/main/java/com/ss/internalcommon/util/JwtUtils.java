@@ -3,6 +3,9 @@ package com.ss.internalcommon.util;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.exceptions.AlgorithmMismatchException;
+import com.auth0.jwt.exceptions.SignatureVerificationException;
+import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.ss.internalcommon.dto.TokenResult;
@@ -16,6 +19,10 @@ import java.util.Map;
 /**
  * @Auther: ljy.s
  * @Date: 2023/3/6 - 03 - 06 - 23:14
+ */
+
+/**
+ * token相关的操作
  */
 public class JwtUtils {
 
@@ -76,6 +83,21 @@ public class JwtUtils {
         tokenResult.setPhone(phone);
         tokenResult.setIdentity(identity);
         return tokenResult;
+    }
+
+    /**
+     * 校验token，主要判断token是否异常
+     * @param token
+     * @return
+     */
+    public static TokenResult checkToken(String token) {
+        TokenResult tokenResult = null;
+        try {
+            tokenResult = JwtUtils.parseToken(token);// 解析token
+        } catch (Exception e) {
+            System.out.println("token异常");
+        }
+        return null;
     }
 
 

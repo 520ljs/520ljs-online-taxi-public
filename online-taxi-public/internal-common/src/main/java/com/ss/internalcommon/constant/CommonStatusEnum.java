@@ -9,9 +9,14 @@ import lombok.Setter;
  */
 
 /**
- * 验证码提示常量类
+ * success or fail 提示常量类
  */
 public enum CommonStatusEnum {
+
+    /**
+     * Token类提示：1100-1199
+     */
+    TOKEN_ERROR(1199, "token错误"),
 
     /**
      * 验证码错误提示：1000-1099
