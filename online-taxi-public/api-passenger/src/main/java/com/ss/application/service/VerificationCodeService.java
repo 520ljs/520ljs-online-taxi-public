@@ -99,13 +99,11 @@ public class VerificationCodeService {
 
         // 将token存到redis中,将token的有效期交给服务端控制了
         String accessTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstants.PASSENGER_IDENTITY, TokenConstants.ACCESS_TOKEN_TYPE);
-        //stringRedisTemplate.opsForValue().set(accessTokenKey, accessToken, 30, TimeUnit.DAYS);
-        stringRedisTemplate.opsForValue().set(accessTokenKey, accessToken, 10, TimeUnit.SECONDS);// test
+        stringRedisTemplate.opsForValue().set(accessTokenKey, accessToken, 30, TimeUnit.DAYS);
 
         // refreshToken要比accessToken晚过期
         String refreshTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstants.PASSENGER_IDENTITY, TokenConstants.REFRESH_TOKEN_TYPE);
-        //stringRedisTemplate.opsForValue().set(refreshTokenKey, refreshToken, 31, TimeUnit.DAYS);
-        stringRedisTemplate.opsForValue().set(refreshTokenKey, refreshToken, 1, TimeUnit.MINUTES);
+        stringRedisTemplate.opsForValue().set(refreshTokenKey, refreshToken, 31, TimeUnit.DAYS);
 
         // 返回响应
         TokenResponse tokenResponse = new TokenResponse();
