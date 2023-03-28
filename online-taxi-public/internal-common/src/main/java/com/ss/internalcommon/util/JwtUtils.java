@@ -38,6 +38,9 @@ public class JwtUtils {
     // token类型
     private static final String JWT_TOKEN_TYPE = "tokenType";
 
+    // tokenTime
+    private static final String JWT_TOKEN_TIME = "tokenTime";
+
     // 生成token
     public static String generatorToken(String passengerPhone, String identity, String tokenType) {
         // 整个系统中只要一个token就够了，Jwt就这一种生成方式
@@ -46,11 +49,8 @@ public class JwtUtils {
         map.put(JWT_KEY_PHONE, passengerPhone);
         map.put(JWT_KEY_IDENTITY, identity);
         map.put(JWT_TOKEN_TYPE, tokenType);
-
-        // token过期时间 1天
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DATE, 1);
-        Date date = calendar.getTime();
+        // 传入当前时间，每次生成refreshToken就会不一样(防止每次生成的token一样)
+        map.put(JWT_TOKEN_TIME, Calendar.getInstance().getTime().toString());
 
         // Jwt工具生成builder，用builder去接收过期时间，盐，map去创建一个token
         JWTCreator.Builder builder = JWT.create();
@@ -97,7 +97,7 @@ public class JwtUtils {
         } catch (Exception e) {
             System.out.println("token异常");
         }
-        return null;
+        return tokenResult;
     }
 
 
