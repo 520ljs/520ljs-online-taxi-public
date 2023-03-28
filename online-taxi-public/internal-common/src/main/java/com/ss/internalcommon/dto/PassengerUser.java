@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
  */
 @Data
 public class PassengerUser {
+
     private Long id;
 
     private LocalDateTime gmtCreate;
@@ -25,4 +26,5 @@ public class PassengerUser {
     private byte state;
 
     private String profilePhoto;
+
 }

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/PassengerUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/PassengerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/PassengerUser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +187,7 @@
       <workItem from="1679638879038" duration="8303000" />
       <workItem from="1679743979571" duration="3866000" />
       <workItem from="1679902461587" duration="5762000" />
-      <workItem from="1679965501384" duration="8661000" />
+      <workItem from="1679965501384" duration="9461000" />
     </task>
     <servers />
   </component>

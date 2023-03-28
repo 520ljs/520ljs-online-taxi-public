@@ -2,6 +2,8 @@ package com.ss.application.service;
 
 import com.ss.internalcommon.dto.PassengerUser;
 import com.ss.internalcommon.dto.ResponseResult;
+import com.ss.internalcommon.dto.TokenResult;
+import com.ss.internalcommon.util.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -18,8 +20,11 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     public ResponseResult getUserByAccessToken(String accessToken) {
-        log.info("accessToken" + accessToken);
+        log.info("accessToken：" + accessToken);
         // 解析accessToken，拿到手机号
+        TokenResult tokenResult = JwtUtils.checkToken(accessToken);
+        String phone = tokenResult.getPhone();
+        log.info("手机号：" + phone);
 
         // 根据手机号查询用户信息
 
