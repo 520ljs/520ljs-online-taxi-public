@@ -1,10 +1,13 @@
 package com.ss.application.service;
 
+import com.ss.application.remote.ServicePassengerUserClient;
 import com.ss.internalcommon.dto.PassengerUser;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.dto.TokenResult;
+import com.ss.internalcommon.request.VerificationCodeDTO;
 import com.ss.internalcommon.util.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -19,6 +22,9 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class UserService {
 
+    @Autowired
+    ServicePassengerUserClient servicePassengerUserClient;
+
     public ResponseResult getUserByAccessToken(String accessToken) {
         log.info("accessToken：" + accessToken);
         // 解析accessToken，拿到手机号
@@ -27,12 +33,9 @@ public class UserService {
         log.info("手机号：" + phone);
 
         // 根据手机号查询用户信息
+        ResponseResult<PassengerUser> userByPhone = servicePassengerUserClient.getUserByPhone(phone);
 
-        PassengerUser passengerUser = new PassengerUser();
-        passengerUser.setPassengerName("张三");
-        passengerUser.setProfilePhoto("头像");
-
-        return ResponseResult.success(passengerUser);
+        return ResponseResult.success(userByPhone.getData());
     }
 
 }
