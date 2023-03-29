@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/controller/ForecastPriceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServicePriceApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
     <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.internalcommon.util.JwtUtils" />
       <module name="internal-common" />
@@ -130,6 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceMapApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-map" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.servicemap.ServiceMapApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServicePassengerUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-passenger-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.servicepassengeruser.ServicePassengerUserApplication" />
@@ -160,6 +165,7 @@
       <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePriceApplication" />
+      <item itemvalue="Spring Boot.ServiceMapApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -199,7 +205,7 @@
       <workItem from="1679902461587" duration="5762000" />
       <workItem from="1679965501384" duration="19686000" />
       <workItem from="1680059094724" duration="728000" />
-      <workItem from="1680059847363" duration="8424000" />
+      <workItem from="1680059847363" duration="9596000" />
     </task>
     <servers />
   </component>
