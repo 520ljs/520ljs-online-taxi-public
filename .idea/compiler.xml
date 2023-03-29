@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-passenger" />
         <module name="service-verificationcode" />
+        <module name="service-price" />
         <module name="service-passenger-user" />
         <module name="internal-common" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="internal-common" target="1.8" />
       <module name="online-taxi-public" target="1.8" />
       <module name="service-passenger-user" target="1.8" />
+      <module name="service-price" target="1.8" />
       <module name="service-verificationcode" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -26,6 +28,7 @@
       <module name="api-passenger" options="-parameters" />
       <module name="internal-common" options="-parameters" />
       <module name="service-passenger-user" options="-parameters" />
+      <module name="service-price" options="-parameters" />
       <module name="service-verificationcode" options="-parameters" />
     </option>
   </component>

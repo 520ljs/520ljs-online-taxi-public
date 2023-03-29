@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/online-taxi-public/internal-common/internal-common.iml" filepath="$PROJECT_DIR$/online-taxi-public/internal-common/internal-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/online-taxi-public/online-taxi-public.iml" filepath="$PROJECT_DIR$/online-taxi-public/online-taxi-public.iml" />
       <module fileurl="file://$PROJECT_DIR$/online-taxi-public/service-passenger-user/service-passenger-user.iml" filepath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/service-passenger-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-taxi-public/service-price/service-price.iml" filepath="$PROJECT_DIR$/online-taxi-public/service-price/service-price.iml" />
       <module fileurl="file://$PROJECT_DIR$/online-taxi-public/service-verificationcode/service-verificationcode.iml" filepath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/service-verificationcode.iml" />
     </modules>
   </component>

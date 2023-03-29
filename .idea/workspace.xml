@@ -6,6 +6,8 @@
       <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/request/ForecastPriceDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/ForecastPriceResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,6 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServicePriceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-price" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.serviceprice.ServicePriceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceVerificationcodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-verificationcode" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.serviceverificationcode.ServiceVerificationcodeApplication" />
@@ -152,6 +161,7 @@
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
       <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
+      <item itemvalue="Spring Boot.ServicePriceApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -191,7 +201,7 @@
       <workItem from="1679902461587" duration="5762000" />
       <workItem from="1679965501384" duration="19686000" />
       <workItem from="1680059094724" duration="728000" />
-      <workItem from="1680059847363" duration="4018000" />
+      <workItem from="1680059847363" duration="5498000" />
     </task>
     <servers />
   </component>
