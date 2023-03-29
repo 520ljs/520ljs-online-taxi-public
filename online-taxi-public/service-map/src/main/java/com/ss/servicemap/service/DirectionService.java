@@ -22,6 +22,8 @@ public class DirectionService {
      */
     public ResponseResult driving(String depLongitude, String depLatitude, String destLongitude, String destLatitude) {
 
+        // 调用第三方接口
+
         DirectionResponse directionResponse = new DirectionResponse();
         directionResponse.setDistance(123);
         directionResponse.setDuration(13);
