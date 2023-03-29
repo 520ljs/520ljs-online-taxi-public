@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/DirectionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/DirectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DirectionService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +206,7 @@
       <workItem from="1679902461587" duration="5762000" />
       <workItem from="1679965501384" duration="19686000" />
       <workItem from="1680059094724" duration="728000" />
-      <workItem from="1680059847363" duration="9596000" />
+      <workItem from="1680059847363" duration="12699000" />
     </task>
     <servers />
   </component>
