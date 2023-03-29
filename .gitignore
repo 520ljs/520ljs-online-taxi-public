@@ -21,6 +21,8 @@
 
 .gitignore
 **/target
+**/.mvn
+**/.idea
 **/mvnw
 **/mvnw.cmd
 
