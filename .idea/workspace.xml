@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/ServiceMapApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/ServiceMapApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DirectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DirectionService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
+  <component name="RunManager" selected="Spring Boot.ServicePassengerUserApplication">
     <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.internalcommon.util.JwtUtils" />
       <module name="internal-common" />
@@ -206,7 +207,7 @@
       <workItem from="1679965501384" duration="19686000" />
       <workItem from="1680059094724" duration="728000" />
       <workItem from="1680059847363" duration="15950000" />
-      <workItem from="1680137926107" duration="8847000" />
+      <workItem from="1680137926107" duration="17327000" />
     </task>
     <servers />
   </component>
@@ -230,9 +231,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DirectionService.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

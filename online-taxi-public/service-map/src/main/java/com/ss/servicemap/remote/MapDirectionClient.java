@@ -4,6 +4,8 @@ import com.ss.internalcommon.constant.AmapConfigConstants;
 import com.ss.internalcommon.response.DirectionResponse;
 import javafx.util.Builder;
 import lombok.extern.slf4j.Slf4j;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -54,8 +56,42 @@ public class MapDirectionClient {
         log.info("高德地图，路径规划，返回信息：" + directionString);
 
         // 解析接口
+        DirectionResponse directionResponse = parseDirectionEntity(directionString);
 
-        return null;
+        return directionResponse;
+    }
+
+    public DirectionResponse parseDirectionEntity(String directionString) {
+        // 定义结果，初始null
+        DirectionResponse directionResponse = null;
+
+        try {
+            // 最外层 转成JSON
+            JSONObject result = JSONObject.fromObject(directionString);
+            if (result.has(AmapConfigConstants.STATUS)) {// 如果有status
+                int status = result.getInt(AmapConfigConstants.STATUS);// 提取状态
+                if (status == 1) {// 0：请求失败，1：请求成功
+                    if (result.has(AmapConfigConstants.ROUTE)) {// 如果有route
+                        JSONObject routeObject = result.getJSONObject(AmapConfigConstants.ROUTE);// 得到route json
+                        JSONArray pathsArray = routeObject.getJSONArray(AmapConfigConstants.PATHS);// 得到paths 数组
+                        JSONObject pathObject = pathsArray.getJSONObject(0);// 取第一个,以速度优先来做判断
+                        // 解析出distance和duration,放到返回值里
+                        directionResponse = new DirectionResponse();
+                        if (pathObject.has(AmapConfigConstants.DISTANCE)) {
+                            int distance = pathObject.getInt(AmapConfigConstants.DISTANCE);
+                            directionResponse.setDistance(distance);
+                        }
+                        if (pathObject.has(AmapConfigConstants.DURATION)) {
+                            int duration = pathObject.getInt(AmapConfigConstants.DURATION);
+                            directionResponse.setDuration(duration);
+                        }
+                        //return directionResponse;
+                    }
+                }
+            }
+        } catch (Exception e) {
+        }
+        return directionResponse;
     }
 
 }
