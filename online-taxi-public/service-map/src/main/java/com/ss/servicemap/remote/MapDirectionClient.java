@@ -4,8 +4,11 @@ import com.ss.internalcommon.constant.AmapConfigConstants;
 import com.ss.internalcommon.response.DirectionResponse;
 import javafx.util.Builder;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @Auther: ljy.s
@@ -17,6 +20,9 @@ public class MapDirectionClient {
 
     @Value("${amap.key}")
     private String amapKey;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     public DirectionResponse direction(String depLongitude, String depLatitude, String destLongitude, String destLatitude) {
         // 组装请求调用url
@@ -43,6 +49,9 @@ public class MapDirectionClient {
         log.info("urlBuild：" + urlBuild.toString());
 
         // 调用高德接口
+        ResponseEntity<String> directionEntity = restTemplate.getForEntity(urlBuild.toString(), String.class);
+        String directionString = directionEntity.getBody();
+        log.info("高德地图，路径规划，返回信息：" + directionString);
 
         // 解析接口
 
