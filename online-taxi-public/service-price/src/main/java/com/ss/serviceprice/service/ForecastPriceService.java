@@ -55,16 +55,35 @@ public class ForecastPriceService {
         queryMap.put("vehicle_type", "1");
         List<PriceRule> priceRules = priceRuleMapper.selectByMap(queryMap);
         if (priceRules.size() == 0) {// 如果不存在，返回计价规则不存在错误
-            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPTY.getCode(),CommonStatusEnum.PRICE_RULE_EMPTY.getValue());
+            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPTY.getCode(), CommonStatusEnum.PRICE_RULE_EMPTY.getValue());
         }
         PriceRule priceRule = priceRules.get(0);// 取出计价规则
-        log.info("priceRules：" + priceRules);
+        log.info("priceRules：" + priceRules + "priceRule：" + priceRule);
 
         log.info("根据距离、时长和计价规则，计算价格");
 
         ForecastPriceResponse forecastPriceResponse = new ForecastPriceResponse();
         forecastPriceResponse.setPrice(12.34);
         return ResponseResult.success(forecastPriceResponse);
+    }
+
+    /**
+     * 根据距离、时长、和计价规则，计算最终价格
+     * @param distance 距离
+     * @param duration 时长
+     * @param priceRule 计价规则
+     * @return 最终价格
+     */
+    public double getPrice(Integer distance, Integer duration, PriceRule priceRule) {
+        // BigDecimal
+
+        // 起步价
+
+        // 里程费
+
+        // 时长费
+        
+        return 0;
     }
 
 }
