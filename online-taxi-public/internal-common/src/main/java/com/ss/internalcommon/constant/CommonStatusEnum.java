@@ -14,6 +14,11 @@ import lombok.Setter;
 public enum CommonStatusEnum {
 
     /**
+     * 计价规则：1300-1399
+     */
+    PRICE_RULE_EMPTY(1300,"计价规则不存在"),
+
+    /**
      * 用户提示：1200-1299
      */
     USER_NOTE_EXISTS(1200, "当前用户不存在"),

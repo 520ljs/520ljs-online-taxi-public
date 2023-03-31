@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/remote/ServiceMapClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/PriceRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/mapper/PriceRuleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/ServicePriceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/ServicePriceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +213,7 @@
       <workItem from="1680059094724" duration="728000" />
       <workItem from="1680059847363" duration="15950000" />
       <workItem from="1680137926107" duration="20817000" />
-      <workItem from="1680224494031" duration="2367000" />
+      <workItem from="1680224494031" duration="6622000" />
     </task>
     <servers />
   </component>
