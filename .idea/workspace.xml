@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/ForecastPriceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/ForecastPriceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/TokenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/VerificationCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/JwtInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/JwtInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/remote/ServicePassengerUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/remote/ServicePassengerUserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/remote/ServiceVerificationcodeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/remote/ServiceVerificationcodeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/IdentityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/IdentityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/TokenConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/TokenConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/PassengerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/PassengerUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/PriceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/PriceRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/TokenResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/TokenResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/request/ForecastPriceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/request/ForecastPriceDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/request/VerificationCodeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/request/VerificationCodeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/DirectionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/DirectionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/ForecastPriceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/ForecastPriceResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/NumberCodeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/NumberCodeResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/TokenResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/RedisPrefixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/RedisPrefixUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/DirectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/DirectionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DirectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DirectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/mapper/PassengerUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/mapper/PassengerUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java/com/ss/servicepassengeruser/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/controller/ForecastPriceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/controller/ForecastPriceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/mapper/PriceRuleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/mapper/PriceRuleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/remote/ServiceMapClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/remote/ServiceMapClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/NumberCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java/com/ss/serviceverificationcode/controller/TestController.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,10 +73,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="D:\SoftWareSpace\Java\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -39,38 +87,32 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="D:/1000phone/everymonth/3月27日-3月31日/3月31日/笔记+源码/SuperMarie01" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fcf100692a5a1200a68736383d89863f&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ss.application" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
     <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -116,13 +158,13 @@
     </configuration>
     <configuration name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-passenger" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.application.ApiPassengerApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ss.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.application.ApiPassengerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,11 +210,12 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JwtUtils" />
         <item itemvalue="Application.NumberCodeController" />
+        <item itemvalue="Application.JwtUtils" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -206,24 +249,45 @@
       <workItem from="1680059094724" duration="728000" />
       <workItem from="1680059847363" duration="15950000" />
       <workItem from="1680137926107" duration="20817000" />
-      <workItem from="1680224494031" duration="7476000" />
+      <workItem from="1680224494031" duration="11315000" />
+      <workItem from="1680333193807" duration="720000" />
+      <workItem from="1680334310692" duration="201000" />
+      <workItem from="1680334525714" duration="96000" />
+      <workItem from="1680334634826" duration="1533000" />
+      <workItem from="1680484268923" duration="996000" />
+      <workItem from="1680492625967" duration="156000" />
+      <workItem from="1680492826087" duration="25000" />
+      <workItem from="1680493062058" duration="14000" />
+      <workItem from="1680493078144" duration="14000" />
+      <workItem from="1680493093647" duration="62000" />
+      <workItem from="1680493157229" duration="63000" />
+      <workItem from="1680493228677" duration="155000" />
+      <workItem from="1680493391089" duration="39000" />
+      <workItem from="1680493438194" duration="535000" />
+      <workItem from="1680493981403" duration="108000" />
+      <workItem from="1680494101145" duration="340000" />
+      <workItem from="1680494448123" duration="1832000" />
+      <workItem from="1680502956434" duration="657000" />
+      <workItem from="1680503827546" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

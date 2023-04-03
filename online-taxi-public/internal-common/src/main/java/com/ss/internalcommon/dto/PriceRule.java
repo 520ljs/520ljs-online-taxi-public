@@ -3,7 +3,7 @@ package com.ss.internalcommon.dto;
 import lombok.Data;
 
 /**
- * @Auther: ljy.s
+ * @Author: ljy.s
  * @Date: 2023/3/31 - 03 - 31 - 11:08
  */
 @Data

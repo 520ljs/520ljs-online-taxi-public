@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Auther: ljy.s
+ * @Author: ljy.s
  * @Date: 2023/3/24 - 03 - 24 - 15:08
  */
 

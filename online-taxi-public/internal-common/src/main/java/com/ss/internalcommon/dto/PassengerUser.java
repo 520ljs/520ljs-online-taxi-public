@@ -5,7 +5,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 /**
- * @Auther: ljy.s
+ * @Author: ljy.s
  * @Date: 2023/3/28 - 03 - 28 - 14:46
  */
 @Data

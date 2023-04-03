@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @Auther: ljy.s
+ * @Author: ljy.s
  * @Date: 2023/3/29 - 03 - 29 - 17:51
  */
 @Service

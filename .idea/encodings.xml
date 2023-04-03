@@ -3,10 +3,18 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/online-taxi-public" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-taxi-public/api-passenger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-taxi-public/internal-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-taxi-public/service-map" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-taxi-public/service-passenger-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-taxi-public/service-passenger-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-taxi-public/service-price" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-taxi-public/service-price/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-taxi-public/service-verificationcode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-taxi-public/service-verificationcode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-taxi-public/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-taxi-public/src/main/resources" charset="UTF-8" />
   </component>
 </project>

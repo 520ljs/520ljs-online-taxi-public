@@ -3,7 +3,7 @@ package com.ss.internalcommon.request;
 import lombok.Data;
 
 /**
- * @Auther: ljy.s
+ * @Author: ljy.s
  * @Date: 2023/3/5 - 03 - 05 - 20:35
  */
 @Data

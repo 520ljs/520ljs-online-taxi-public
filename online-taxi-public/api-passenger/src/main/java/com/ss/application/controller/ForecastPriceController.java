@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import sun.rmi.runtime.Log;
 
 /**
- * @Auther: ljy.s
+ * @Author: ljy.s
  * @Date: 2023/3/29 - 03 - 29 - 11:14
  */
 @RestController

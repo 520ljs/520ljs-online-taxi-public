@@ -1,7 +1,7 @@
 package com.ss.internalcommon.util;
 
 /**
- * @Auther: ljy.s
+ * @Author: ljy.s
  * @Date: 2023/3/8 - 03 - 08 - 16:43
  */
 public class RedisPrefixUtils {

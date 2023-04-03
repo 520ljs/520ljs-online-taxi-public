@@ -22,7 +22,7 @@ import javax.xml.ws.Response;
 import java.io.PrintWriter;
 
 /**
- * @Auther: ljy.s
+ * @Author: ljy.s
  * @Date: 2023/3/7 - 03 - 07 - 19:02
  */
 public class JwtInterceptor implements HandlerInterceptor {
