@@ -63,9 +63,10 @@ public class ForecastPriceService {
         log.info("priceRules：" + priceRules + "priceRule：" + priceRule);
 
         log.info("根据距离、时长和计价规则，计算价格");
+        double price = getPrice(distance, duration, priceRule);
 
         ForecastPriceResponse forecastPriceResponse = new ForecastPriceResponse();
-        forecastPriceResponse.setPrice(12.34);
+        forecastPriceResponse.setPrice(price);
         return ResponseResult.success(forecastPriceResponse);
     }
 
@@ -89,7 +90,7 @@ public class ForecastPriceService {
         // 里程费
         // 总里程 最初为 m
         BigDecimal distanceDecimal = new BigDecimal(distance);
-        // 总里程 转换为 km   四舍五入
+        // 总里程 转换为 km（数据库里单位是km     除1000   小数点2）   四舍五入
         BigDecimal distanceMileDecimal = distanceDecimal.divide(new BigDecimal(1000), 2, BigDecimal.ROUND_HALF_UP);
         // 起步里程
         Integer startMile = priceRule.getStartMile();
@@ -102,13 +103,33 @@ public class ForecastPriceService {
         // 计程单价 元/km
         Double unitPricePerMile = priceRule.getUnitPricePerMile();
         BigDecimal unitPricePerMileDecimal = new BigDecimal(unitPricePerMile);
-        // 里程价格
+        // 里程价格（最终里程数*计程单价）
         BigDecimal mileFare = mileDecimal.multiply(unitPricePerMileDecimal).setScale(2, BigDecimal.ROUND_HALF_UP);
         price = price.add(mileFare);
 
         // 时长费
+        BigDecimal time = new BigDecimal(duration);
+        // 时长分钟数    从秒转换为分钟（数据库里单位是分钟   除60    小数点2）
+        BigDecimal timeDecimal = time.divide(new BigDecimal(60), 2, BigDecimal.ROUND_HALF_UP);
+        // 计时单价（每分钟多少钱）
+        Double unitPricePerMinute = priceRule.getUnitPricePerMinute();
+        BigDecimal unitPricePerMinuteDecimal = new BigDecimal(unitPricePerMinute);
+        // 时长费用（分钟数*计时单价）
+        BigDecimal timeFare = timeDecimal.multiply(unitPricePerMinuteDecimal);
+        price = price.add(timeFare).setScale(2,BigDecimal.ROUND_HALF_UP);// 小数2位，四舍五入
 
-        return 0;
+        return price.doubleValue();
     }
 
+    /*public static void main(String[] args) {
+        // city_code 110000, vehicle_type 1, start_fare 10, start_mile 3,
+        // unit_price_per_mile 1.8, unit_price_per_minute
+        PriceRule priceRule = new PriceRule();
+        priceRule.setUnitPricePerMile(1.8);
+        priceRule.setUnitPricePerMinute(0.5);
+        priceRule.setStartFare(10.0);
+        priceRule.setStartMile(3);
+
+        System.out.println(getPrice(6500, 1800, priceRule));
+    }*/
 }
