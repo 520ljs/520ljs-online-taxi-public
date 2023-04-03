@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/remote/ServicePriceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/BigDecimalUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,6 +33,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/TokenService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,6 +81,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Compound.预估价格服务系列">
+    <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
+      <module name="service-price" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ss.serviceprice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.internalcommon.util.JwtUtils" />
       <module name="internal-common" />
@@ -169,6 +183,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ForecastPriceService" />
       <item itemvalue="Application.JwtUtils" />
       <item itemvalue="Application.NumberCodeController" />
       <item itemvalue="Compound.预估价格服务系列" />
@@ -182,6 +197,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ForecastPriceService" />
         <item itemvalue="Application.NumberCodeController" />
         <item itemvalue="Application.JwtUtils" />
       </list>
@@ -241,7 +257,7 @@
       <workItem from="1680494448123" duration="1832000" />
       <workItem from="1680502956434" duration="657000" />
       <workItem from="1680503827546" duration="40000" />
-      <workItem from="1680503891377" duration="8021000" />
+      <workItem from="1680503891377" duration="10770000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@ import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.ForecastPriceDTO;
 import com.ss.internalcommon.response.DirectionResponse;
 import com.ss.internalcommon.response.ForecastPriceResponse;
+import com.ss.internalcommon.util.BigDecimalUtils;
 import com.ss.serviceprice.mapper.PriceRuleMapper;
 import com.ss.serviceprice.remote.ServiceMapClient;
 import lombok.extern.slf4j.Slf4j;
@@ -78,50 +79,46 @@ public class ForecastPriceService {
      * @param priceRule 计价规则
      * @return 最终价格
      */
-    public double getPrice(Integer distance, Integer duration, PriceRule priceRule) {
+    public static double getPrice(Integer distance, Integer duration, PriceRule priceRule) {
         // BigDecimal   Java在java.math包中提供的API类BigDecimal，用来对超过16位有效位的数进行精确的运算。
-        BigDecimal price = new BigDecimal(0);
+        double price = 0;
 
         // 起步价
-        Double startFare = priceRule.getStartFare();
-        BigDecimal startFareDecimal = new BigDecimal(startFare);
-        price = price.add(startFareDecimal);
+        double startFare = priceRule.getStartFare();
+        BigDecimalUtils.add(price, startFare);
 
         // 里程费
         // 总里程 最初为 m
-        BigDecimal distanceDecimal = new BigDecimal(distance);
         // 总里程 转换为 km（数据库里单位是km     除1000   小数点2）   四舍五入
-        BigDecimal distanceMileDecimal = distanceDecimal.divide(new BigDecimal(1000), 2, BigDecimal.ROUND_HALF_UP);
+        double distanceMile = BigDecimalUtils.divide(distance, 1000);
         // 起步里程
-        Integer startMile = priceRule.getStartMile();
-        BigDecimal startMileDecimal = new BigDecimal(startMile);
+        double startMile = (double) priceRule.getStartMile();
         // 总里程减去起步里程(里程的差值)    转换成double
-        double distanceSubtract = distanceMileDecimal.subtract(startMileDecimal).doubleValue();
+        double distanceSubtract = BigDecimalUtils.subtract(distanceMile, startMile);
         // 最终收费里程数 km  如果小于0，就返回0，大于0，就返回它自己
         Double mile = distanceSubtract < 0 ? 0 : distanceSubtract;
-        BigDecimal mileDecimal = new BigDecimal(mile);
         // 计程单价 元/km
         Double unitPricePerMile = priceRule.getUnitPricePerMile();
-        BigDecimal unitPricePerMileDecimal = new BigDecimal(unitPricePerMile);
         // 里程价格（最终里程数*计程单价）
-        BigDecimal mileFare = mileDecimal.multiply(unitPricePerMileDecimal).setScale(2, BigDecimal.ROUND_HALF_UP);
-        price = price.add(mileFare);
+        double mileFare = BigDecimalUtils.multiply(mile, unitPricePerMile);
+        price = BigDecimalUtils.add(price, mileFare);
 
         // 时长费
-        BigDecimal time = new BigDecimal(duration);
         // 时长分钟数    从秒转换为分钟（数据库里单位是分钟   除60    小数点2）
-        BigDecimal timeDecimal = time.divide(new BigDecimal(60), 2, BigDecimal.ROUND_HALF_UP);
+        double timeMinute = BigDecimalUtils.divide(duration, 60);
         // 计时单价（每分钟多少钱）
         Double unitPricePerMinute = priceRule.getUnitPricePerMinute();
-        BigDecimal unitPricePerMinuteDecimal = new BigDecimal(unitPricePerMinute);
         // 时长费用（分钟数*计时单价）
-        BigDecimal timeFare = timeDecimal.multiply(unitPricePerMinuteDecimal);
-        price = price.add(timeFare).setScale(2,BigDecimal.ROUND_HALF_UP);// 小数2位，四舍五入
+        double timeFare = BigDecimalUtils.multiply(timeMinute, unitPricePerMinute);
+        price = BigDecimalUtils.add(price, timeFare);
 
-        return price.doubleValue();
+        BigDecimal priceBigDecimal = BigDecimal.valueOf(price);
+        priceBigDecimal = priceBigDecimal.setScale(2, BigDecimal.ROUND_HALF_UP);// 2位小数，四舍五入
+
+        return priceBigDecimal.doubleValue();
     }
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         // city_code 110000, vehicle_type 1, start_fare 10, start_mile 3,
         // unit_price_per_mile 1.8, unit_price_per_minute
         PriceRule priceRule = new PriceRule();
@@ -131,5 +128,5 @@ public class ForecastPriceService {
         priceRule.setStartMile(3);
 
         System.out.println(getPrice(6500, 1800, priceRule));
-    }*/
+    }
 }
