@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/BigDecimalUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/DicDistrict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/mapper/DicDistrictMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/ServiceMapApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/ServiceMapApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +42,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/TokenService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -70,7 +80,7 @@
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "preferences.editor",
     "spring.configuration.checksum": "fcf100692a5a1200a68736383d89863f",
     "vue.rearranger.settings.migration": "true"
   }
@@ -257,7 +267,8 @@
       <workItem from="1680494448123" duration="1832000" />
       <workItem from="1680502956434" duration="657000" />
       <workItem from="1680503827546" duration="40000" />
-      <workItem from="1680503891377" duration="10770000" />
+      <workItem from="1680503891377" duration="11402000" />
+      <workItem from="1680572304826" duration="3945000" />
     </task>
     <servers />
   </component>
