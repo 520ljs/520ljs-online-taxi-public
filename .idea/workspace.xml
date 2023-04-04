@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/DicDistrict.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/mapper/DicDistrictMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/DicDistrictController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DicDistrictService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/ServiceMapApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/ServiceMapApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +35,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/TokenService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/DicDistrictController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/TestController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" root0="SKIP_INSPECTION" />
   </component>
@@ -90,7 +84,7 @@
       <recent name="com.ss.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Compound.预估价格服务系列">
+  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -268,7 +262,7 @@
       <workItem from="1680502956434" duration="657000" />
       <workItem from="1680503827546" duration="40000" />
       <workItem from="1680503891377" duration="11402000" />
-      <workItem from="1680572304826" duration="3945000" />
+      <workItem from="1680572304826" duration="6692000" />
     </task>
     <servers />
   </component>
