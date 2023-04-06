@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/端口管理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DicDistrictService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DicDistrictService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDicDistrictClient.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/DicDistrictService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/service/ForecastPriceService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/端口管理.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,25 +77,32 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/1000phone/SourceCode/ljsmr/cdsf",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.25862068",
     "settings.editor.selected.configurable": "preferences.editor",
-    "spring.configuration.checksum": "fcf100692a5a1200a68736383d89863f",
+    "spring.configuration.checksum": "00167acdcd8b6b5fa84775ba28a26750",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public\online-taxi-public" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ss.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -160,6 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceDriverUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="service-driver-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.servicedriveruser.ServiceDriverUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceMapApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-map" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ss.servicemap.ServiceMapApplication" />
@@ -195,6 +218,7 @@
       <item itemvalue="Compound.预估价格服务系列" />
       <item itemvalue="Compound.乘客用户服务中心系列1" />
       <item itemvalue="Compound.乘客用户服务中心系列2" />
+      <item itemvalue="Spring Boot.ServiceDriverUserApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
       <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
@@ -264,7 +288,10 @@
       <workItem from="1680502956434" duration="657000" />
       <workItem from="1680503827546" duration="40000" />
       <workItem from="1680503891377" duration="11402000" />
-      <workItem from="1680572304826" duration="19572000" />
+      <workItem from="1680572304826" duration="19909000" />
+      <workItem from="1680743922673" duration="2776000" />
+      <workItem from="1680764492361" duration="723000" />
+      <workItem from="1680765799197" duration="4106000" />
     </task>
     <servers />
   </component>

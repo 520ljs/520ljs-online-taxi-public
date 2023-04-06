@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" />
         <option value="$PROJECT_DIR$/online-taxi-public/service-price/pom.xml" />
         <option value="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" />
+        <option value="$PROJECT_DIR$/online-taxi-public/service-driver-user/service-driver-user/pom.xml" />
+        <option value="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" />
       </list>
     </option>
   </component>
