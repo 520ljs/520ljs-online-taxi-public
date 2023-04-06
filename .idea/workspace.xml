@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/DriverUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/mapper/DriverUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/ServiceDriverUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/ServiceDriverUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/DriverUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/DriverUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +281,7 @@
       <workItem from="1680572304826" duration="19909000" />
       <workItem from="1680743922673" duration="2776000" />
       <workItem from="1680764492361" duration="723000" />
-      <workItem from="1680765799197" duration="7121000" />
+      <workItem from="1680765799197" duration="8358000" />
     </task>
     <servers />
   </component>
