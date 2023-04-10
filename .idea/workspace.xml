@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/controller/DriverUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/remote/ServiceDriverUserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/service/DriverUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-boss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/ApiBossApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/ApiBossApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverUserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +306,7 @@
       <workItem from="1680764492361" duration="723000" />
       <workItem from="1680765799197" duration="9183000" />
       <workItem from="1680829244158" duration="8770000" />
-      <workItem from="1681088572244" duration="8011000" />
+      <workItem from="1681088572244" duration="10796000" />
     </task>
     <servers />
   </component>
@@ -330,6 +326,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/UserController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -38,4 +38,12 @@ public class DriverUserService {
         return ResponseResult.success("");
     }
 
+    public ResponseResult updateDriverUser(DriverUser driverUser) {
+        LocalDateTime now = LocalDateTime.now();
+        // 设置当前修改时间
+        driverUser.setGmtModified(now);
+        driverUserMapper.updateById(driverUser);
+        return ResponseResult.success("");
+    }
+
 }
