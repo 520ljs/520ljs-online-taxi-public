@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="internal-common" />
+        <module name="api-boss" />
         <module name="api-passenger" />
         <module name="service-driver-user" />
         <module name="service-verificationcode" />
@@ -16,19 +17,10 @@
         <module name="service-passenger-user" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="api-passenger" target="1.8" />
-      <module name="internal-common" target="1.8" />
-      <module name="online-taxi-public" target="1.8" />
-      <module name="service-driver-user" target="1.8" />
-      <module name="service-map" target="1.8" />
-      <module name="service-passenger-user" target="1.8" />
-      <module name="service-price" target="1.8" />
-      <module name="service-verificationcode" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-boss" options="-parameters" />
       <module name="api-passenger" options="-parameters" />
       <module name="internal-common" options="-parameters" />
       <module name="service-driver-user" options="-parameters" />

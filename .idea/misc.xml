@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -13,6 +14,7 @@
         <option value="$PROJECT_DIR$/online-taxi-public/service-map/pom.xml" />
         <option value="$PROJECT_DIR$/online-taxi-public/service-driver-user/service-driver-user/pom.xml" />
         <option value="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" />
+        <option value="$PROJECT_DIR$/online-taxi-public/api-boss/pom.xml" />
       </list>
     </option>
   </component>
