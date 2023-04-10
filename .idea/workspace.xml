@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/service-driver-user.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/service-map.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/service-passenger-user.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-price/service-price.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/ServiceDriverUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/ServiceDriverUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-passenger-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +58,13 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\SoftWareSpace\Java\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectId" id="2MPfQzY711X94z394BpWNmNHhAd" />
   <component name="ProjectLevelVcsManager">
@@ -59,29 +74,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.25862068&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;00167acdcd8b6b5fa84775ba28a26750&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public/online-taxi-public/service-price",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.25862068",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "00167acdcd8b6b5fa84775ba28a26750",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -96,7 +112,7 @@
       <recent name="com.ss.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
+  <component name="RunManager" selected="Compound.预估价格服务系列">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -286,7 +302,8 @@
       <workItem from="1680743922673" duration="2776000" />
       <workItem from="1680764492361" duration="723000" />
       <workItem from="1680765799197" duration="9183000" />
-      <workItem from="1680829244158" duration="6608000" />
+      <workItem from="1680829244158" duration="8770000" />
+      <workItem from="1681088572244" duration="2937000" />
     </task>
     <servers />
   </component>

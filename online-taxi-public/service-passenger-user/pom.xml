@@ -9,12 +9,7 @@
     </parent>
 
     <artifactId>service-passenger-user</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>service-passenger-user</name>
-    <description>service-passenger-user</description>
-    <properties>
-        <java.version>8</java.version>
-    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
