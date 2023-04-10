@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/generator/MysqlGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +80,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public/online-taxi-public/service-price",
+    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public/online-taxi-public/sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,8 +88,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.25862068",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "00167acdcd8b6b5fa84775ba28a26750",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "b08805396dd47ee4208e9ccaeb2759fb",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,6 +98,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public\online-taxi-public\sql" />
       <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -105,7 +108,7 @@
       <recent name="com.ss.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
+  <component name="RunManager" selected="Application.MysqlGenerator">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -125,6 +128,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ss.internalcommon.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MysqlGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ss.servicedriveruser.generator.MysqlGenerator" />
+      <module name="service-driver-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ss.servicedriveruser.generator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -229,6 +245,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MysqlGenerator" />
       <item itemvalue="Application.ForecastPriceService" />
       <item itemvalue="Application.JwtUtils" />
       <item itemvalue="Application.NumberCodeController" />
@@ -246,6 +263,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="Application.ForecastPriceService" />
         <item itemvalue="Application.NumberCodeController" />
         <item itemvalue="Application.JwtUtils" />
@@ -312,7 +330,8 @@
       <workItem from="1680764492361" duration="723000" />
       <workItem from="1680765799197" duration="9183000" />
       <workItem from="1680829244158" duration="8770000" />
-      <workItem from="1681088572244" duration="17533000" />
+      <workItem from="1681088572244" duration="19524000" />
+      <workItem from="1681118584881" duration="4689000" />
     </task>
     <servers />
   </component>
