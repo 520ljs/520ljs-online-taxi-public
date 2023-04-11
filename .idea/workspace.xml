@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/generator/MysqlGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/dto/Car.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public/online-taxi-public/sql",
+    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,7 +87,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.25862068",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.splitter.proportion": "0.23316498",
     "spring.configuration.checksum": "b08805396dd47ee4208e9ccaeb2759fb",
     "vue.rearranger.settings.migration": "true"
   }
@@ -105,6 +105,7 @@
       <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public\online-taxi-public" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ss.internalcommon.dto" />
       <recent name="com.ss.application" />
     </key>
   </component>
@@ -331,7 +332,12 @@
       <workItem from="1680765799197" duration="9183000" />
       <workItem from="1680829244158" duration="8770000" />
       <workItem from="1681088572244" duration="19524000" />
-      <workItem from="1681118584881" duration="4689000" />
+      <workItem from="1681118584881" duration="5435000" />
+      <workItem from="1681134199964" duration="12000" />
+      <workItem from="1681134497432" duration="117000" />
+      <workItem from="1681136564708" duration="177000" />
+      <workItem from="1681136745800" duration="617000" />
+      <workItem from="1681174868898" duration="1765000" />
     </task>
     <servers />
   </component>
