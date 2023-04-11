@@ -1,6 +1,7 @@
 package com.ss.servicedriveruser.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ss.internalcommon.dto.Car;
 import org.springframework.stereotype.Repository;
 
 /**

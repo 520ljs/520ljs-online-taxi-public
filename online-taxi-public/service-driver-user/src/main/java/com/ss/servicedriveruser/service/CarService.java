@@ -1,6 +1,12 @@
 package com.ss.servicedriveruser.service;
 
+import com.ss.internalcommon.dto.Car;
+import com.ss.internalcommon.dto.ResponseResult;
+import com.ss.servicedriveruser.mapper.CarMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
 
 /**
  * @Author:ljy.s
@@ -8,4 +14,17 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CarService {
+
+    @Autowired
+    private CarMapper carMapper;
+
+    public ResponseResult addCar(Car car) {
+        LocalDateTime now = LocalDateTime.now();
+        car.setGmtModified(now);
+        car.setGmtCreate(now);
+
+        carMapper.insert(car);
+        return ResponseResult.success("");
+    }
+
 }
