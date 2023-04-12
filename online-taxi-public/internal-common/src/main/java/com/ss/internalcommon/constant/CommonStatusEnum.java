@@ -14,14 +14,25 @@ import lombok.Setter;
 public enum CommonStatusEnum {
 
     /**
+     * 司机和车辆：1500-1599
+     */
+    DRIVER_CAR_BIND_NOT_EXITS(1500, "司机和车辆绑定关系不存在"),
+
+    DRIVER_CAR_BIND_EXITS(1501, "司机和车辆绑定关系已存在，请勿重复绑定"),
+
+    DRIVER_NOT_EXITS(1502, "司机不存在"),
+    DRIVER_BIND_EXITS(1503, "司机已经被绑定了，请勿重复绑定"),
+    CAR_BIND_EXITS(1504, "车辆已经被绑定了，请勿重复绑定"),
+
+    /**
      * 地图信息：1400-1499
      */
-    MAP_DISTRICT_ERROR(1400,"地图请求错误"),
+    MAP_DISTRICT_ERROR(1400, "地图请求错误"),
 
     /**
      * 计价规则：1300-1399
      */
-    PRICE_RULE_EMPTY(1300,"计价规则不存在"),
+    PRICE_RULE_EMPTY(1300, "计价规则不存在"),
 
     /**
      * 用户提示：1200-1299

@@ -1,5 +1,7 @@
 package com.ss.servicedriveruser.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.ss.internalcommon.constant.CommonStatusEnum;
 import com.ss.internalcommon.constant.DriverCarConstants;
 import com.ss.internalcommon.dto.DriverCarBindingRelationship;
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -8,11 +10,12 @@ import com.ss.servicedriveruser.mapper.DriverCarBindingRelationshipMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author 520ljs
@@ -21,10 +24,39 @@ import java.time.LocalDateTime;
 @Service
 public class DriverCarBindingRelationshipService {
 
-    @Autowired
+    @Resource
     DriverCarBindingRelationshipMapper driverCarBindingRelationshipMapper;
 
     public ResponseResult bind(DriverCarBindingRelationship driverCarBindingRelationship) {
+        // 判断，如果参数中的车辆和司机，已经做过绑定，则不允许再次绑定（判断的是 司机和车辆的 绑定状态）
+        QueryWrapper<DriverCarBindingRelationship> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("driver_id", driverCarBindingRelationship.getDriverId());
+        queryWrapper.eq("car_id", driverCarBindingRelationship.getCarId());
+        queryWrapper.eq("bind_state", DriverCarConstants.DRIVER_CAR_BIND);
+        // 已有绑定关系，返回错误信息
+        Integer integer = driverCarBindingRelationshipMapper.selectCount(queryWrapper);
+        if (integer.intValue() > 0) {
+            return ResponseResult.fail(CommonStatusEnum.DRIVER_CAR_BIND_EXITS.getCode(),CommonStatusEnum.DRIVER_CAR_BIND_EXITS.getValue(),"");
+        }
+
+        // 司机不能重复绑定
+        queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("driver_id", driverCarBindingRelationship.getDriverId());
+        queryWrapper.eq("bind_state", DriverCarConstants.DRIVER_CAR_BIND);
+        integer = driverCarBindingRelationshipMapper.selectCount(queryWrapper);
+        if (integer.intValue() > 0) {
+            return ResponseResult.fail(CommonStatusEnum.DRIVER_BIND_EXITS.getCode(),CommonStatusEnum.DRIVER_BIND_EXITS.getValue(),"");
+        }
+
+        // 汽车不能重复绑定
+        queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("car_id", driverCarBindingRelationship.getCarId());
+        queryWrapper.eq("bind_state", DriverCarConstants.DRIVER_CAR_BIND);
+        integer = driverCarBindingRelationshipMapper.selectCount(queryWrapper);
+        if (integer.intValue() > 0) {
+            return ResponseResult.fail(CommonStatusEnum.CAR_BIND_EXITS.getCode(),CommonStatusEnum.CAR_BIND_EXITS.getValue(),"");
+        }
+
         // 设置当前绑定时间
         LocalDateTime now = LocalDateTime.now();
         driverCarBindingRelationship.setBindingTime(now);

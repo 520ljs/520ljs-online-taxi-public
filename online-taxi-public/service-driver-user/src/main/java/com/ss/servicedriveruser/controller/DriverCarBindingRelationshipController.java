@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2023-04-12
  */
 @RestController
-@RequestMapping("/driver-car-binding-relationship")
+@RequestMapping("/driver_car_binding_relationship")
 public class DriverCarBindingRelationshipController {
 
     @Autowired
