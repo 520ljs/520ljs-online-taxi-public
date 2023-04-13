@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * @Author:ljy.s
  * @Date:2023/4/4 - 04 - 04 - 11:14
@@ -19,10 +21,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class DicDistrictService {
 
-    @Autowired
+    @Resource
     private MapDicDistrictClient mapDicDistrictClient;
 
-    @Autowired
+    @Resource
     private DicDistrictMapper dicDistrictMapper;
 
     public ResponseResult initDicDistrict(String keywords) {

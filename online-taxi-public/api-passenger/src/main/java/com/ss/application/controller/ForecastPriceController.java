@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import sun.rmi.runtime.Log;
 
+import javax.annotation.Resource;
+
 /**
  * @Author: ljy.s
  * @Date: 2023/3/29 - 03 - 29 - 11:14
@@ -17,7 +19,7 @@ import sun.rmi.runtime.Log;
 @RestController
 public class ForecastPriceController {// forecastPrice 预测价格
 
-    @Autowired
+    @Resource
     ForecastPriceService forecastPriceService;
 
     @PostMapping("/forecast-price")

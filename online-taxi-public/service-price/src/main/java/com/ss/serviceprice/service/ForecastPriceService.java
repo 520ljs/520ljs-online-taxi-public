@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
@@ -26,10 +27,10 @@ import java.util.Map;
 @Slf4j
 public class ForecastPriceService {
 
-    @Autowired
+    @Resource
     private ServiceMapClient serviceMapClient;
 
-    @Autowired
+    @Resource
     private PriceRuleMapper priceRuleMapper;
 
     public ResponseResult forecastPrice(String depLongitude, String depLatitude, String destLongitude, String destLatitude) {

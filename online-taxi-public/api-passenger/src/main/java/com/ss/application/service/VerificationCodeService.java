@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -26,13 +27,13 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class VerificationCodeService {
 
-    @Autowired
+    @Resource
     private ServiceVerificationcodeClient serviceVerificationcodeClient;
 
-    @Autowired
+    @Resource
     private StringRedisTemplate stringRedisTemplate;
 
-    @Autowired
+    @Resource
     private ServicePassengerUserClient servicePassengerUserClient;
 
 

@@ -6,6 +6,8 @@ import com.ss.internalcommon.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * @Author:ljy.s
  * @Date:2023/4/10 - 04 - 10 - 15:08
@@ -13,7 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-    @Autowired
+    @Resource
     private ServiceDriverUserClient serviceDriverUserClient;
 
     public ResponseResult updateUser(DriverUser driverUser) {

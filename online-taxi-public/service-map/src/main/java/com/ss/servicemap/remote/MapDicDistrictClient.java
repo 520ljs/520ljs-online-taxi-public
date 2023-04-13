@@ -8,6 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
+
 /**
  * @Author:ljy.s
  * @Date:2023/4/4 - 04 - 04 - 14:36
@@ -18,7 +20,7 @@ public class MapDicDistrictClient {
     @Value("${amap.key}")
     private String amapKey;
 
-    @Autowired
+    @Resource
     private RestTemplate restTemplate;
 
     public String dicDistrict(String keywords) {

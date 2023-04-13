@@ -6,6 +6,8 @@ import com.ss.servicemap.remote.MapDirectionClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * @Author: ljy.s
  * @Date: 2023/3/29 - 03 - 29 - 16:51
@@ -13,7 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class DirectionService {
 
-    @Autowired
+    @Resource
     private MapDirectionClient mapDirectionClient;
 
     /**

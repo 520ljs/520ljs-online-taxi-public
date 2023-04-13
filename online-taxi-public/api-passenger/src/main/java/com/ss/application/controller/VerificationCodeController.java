@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * @Author: ljy.s
  * @Date: 2023/3/3 - 03 - 03 - 22:32
@@ -16,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class VerificationCodeController {
 
-    @Autowired
+    @Resource
     private VerificationCodeService verificationCodeService;
 
     @GetMapping("/verification-code")

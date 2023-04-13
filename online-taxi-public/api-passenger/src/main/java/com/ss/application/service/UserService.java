@@ -10,6 +10,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * @Author: ljy.s
  * @Date: 2023/3/28 - 03 - 28 - 11:37
@@ -22,7 +24,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class UserService {
 
-    @Autowired
+    @Resource
     ServicePassengerUserClient servicePassengerUserClient;
 
     public ResponseResult getUserByAccessToken(String accessToken) {

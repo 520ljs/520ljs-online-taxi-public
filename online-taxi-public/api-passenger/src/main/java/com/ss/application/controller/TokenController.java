@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * @Author: ljy.s
  * @Date: 2023/3/24 - 03 - 24 - 15:08
@@ -19,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TokenController {
 
-    @Autowired
+    @Resource
     private TokenService tokenService;
 
     @PostMapping("/token-refresh")

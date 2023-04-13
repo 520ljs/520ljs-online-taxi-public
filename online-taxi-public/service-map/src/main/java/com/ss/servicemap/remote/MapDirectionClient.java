@@ -12,6 +12,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
+
 /**
  * @Author: ljy.s
  * @Date: 2023/3/29 - 03 - 29 - 17:51
@@ -23,7 +25,7 @@ public class MapDirectionClient {
     @Value("${amap.key}")
     private String amapKey;
 
-    @Autowired
+    @Resource
     private RestTemplate restTemplate;
 
     public DirectionResponse direction(String depLongitude, String depLatitude, String destLongitude, String destLatitude) {

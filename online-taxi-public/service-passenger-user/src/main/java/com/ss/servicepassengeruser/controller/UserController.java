@@ -7,6 +7,8 @@ import com.ss.servicepassengeruser.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
+
 /**
  * @Author: ljy.s
  * @Date: 2023/3/5 - 03 - 05 - 20:33
@@ -14,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class UserController {
 
-    @Autowired
+    @Resource
     private UserService userService;
 
     @PostMapping("/user")

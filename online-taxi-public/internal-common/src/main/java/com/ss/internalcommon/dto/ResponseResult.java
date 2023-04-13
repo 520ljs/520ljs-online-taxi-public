@@ -9,7 +9,8 @@ import lombok.experimental.Accessors;
  * @Date: 2023/3/4 - 03 - 04 - 17:20
  */
 @Data
-// 链式调用，每次通过data去设置完(set,get)的时候，如果用了这一行注解，那么set完之后返回的是整个对象，可以接着去做别的操作
+// 链式调用，每次通过data去设置完(set,get)的时候，如果用了这一行注解，
+// 那么set完之后返回的是整个对象，可以接着去做别的操作
 @Accessors(chain = true)
 public class ResponseResult<T> {
 

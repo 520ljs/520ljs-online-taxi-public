@@ -6,6 +6,7 @@ import com.ss.servicedriveruser.mapper.DriverUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.sql.Driver;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -17,7 +18,7 @@ import java.time.LocalDateTime;
 @Service
 public class DriverUserService {
 
-    @Autowired
+    @Resource
     private DriverUserMapper driverUserMapper;
 
     public ResponseResult testGetDriverUser() {

@@ -6,6 +6,7 @@ import com.ss.servicedriveruser.mapper.CarMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 /**
@@ -15,7 +16,7 @@ import java.time.LocalDateTime;
 @Service
 public class CarService {
 
-    @Autowired
+    @Resource
     private CarMapper carMapper;
 
     public ResponseResult addCar(Car car) {

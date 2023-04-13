@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 @Slf4j
 public class ForecastPriceService {
 
-    @Autowired
+    @Resource
     ServicePriceClient servicePriceClient;
 
     /**

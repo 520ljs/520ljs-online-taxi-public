@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * @Author:ljy.s
  * @Date:2023/4/4 - 04 - 04 - 11:12
@@ -13,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DicDistrictController {
 
-    @Autowired
+    @Resource
     private DicDistrictService dicDistrictService;
 
     @GetMapping("/dic-district")
