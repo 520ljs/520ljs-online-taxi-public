@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/service/CarService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/DriverCarBindingRelationshipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/DriverCarBindingRelationshipController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverCarBindingRelationshipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverCarBindingRelationshipService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/controller/DriverUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/controller/DriverUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/remote/ServiceDriverUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/remote/ServiceDriverUserClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +111,7 @@
       <recent name="com.ss.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
+  <component name="RunManager" selected="Spring Boot.ApiBossApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -344,7 +343,7 @@
       <workItem from="1681213151390" duration="26000" />
       <workItem from="1681213861698" duration="2460000" />
       <workItem from="1681261367262" duration="13891000" />
-      <workItem from="1681348243685" duration="7794000" />
+      <workItem from="1681348243685" duration="11669000" />
     </task>
     <servers />
   </component>
