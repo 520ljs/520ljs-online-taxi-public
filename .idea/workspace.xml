@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/service/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/controller/DriverCarBindingRelationshipController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/service/DriverCarBindingRelationshipService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/controller/DriverUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/controller/DriverUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/remote/ServiceDriverUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-boss/src/main/java/com/ss/apiboss/remote/ServiceDriverUserClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +111,7 @@
       <recent name="com.ss.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiBossApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -343,7 +343,7 @@
       <workItem from="1681213151390" duration="26000" />
       <workItem from="1681213861698" duration="2460000" />
       <workItem from="1681261367262" duration="13891000" />
-      <workItem from="1681348243685" duration="11669000" />
+      <workItem from="1681348243685" duration="15913000" />
     </task>
     <servers />
   </component>
