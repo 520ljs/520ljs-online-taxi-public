@@ -23,7 +23,7 @@ import javax.annotation.Resource;
  * @since 2023-04-12
  */
 @RestController
-@RequestMapping("/driver_car_binding_relationship")
+@RequestMapping("/driver-car-binding-relationship")
 public class DriverCarBindingRelationshipController {
 
     @Resource

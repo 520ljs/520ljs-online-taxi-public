@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  * @Date:2023/4/13 - 04 - 13 - 14:52
  */
 @RestController
-@RequestMapping("/driver_car_binding_relationship")
+@RequestMapping("/driver-car-binding-relationship")
 public class DriverCarBindingRelationshipController {
 
     @Resource
