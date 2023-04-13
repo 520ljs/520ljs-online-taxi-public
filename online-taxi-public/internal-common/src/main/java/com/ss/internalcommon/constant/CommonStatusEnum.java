@@ -21,7 +21,9 @@ public enum CommonStatusEnum {
     DRIVER_CAR_BIND_EXITS(1501, "司机和车辆绑定关系已存在，请勿重复绑定"),
 
     DRIVER_NOT_EXITS(1502, "司机不存在"),
+
     DRIVER_BIND_EXITS(1503, "司机已经被绑定了，请勿重复绑定"),
+
     CAR_BIND_EXITS(1504, "车辆已经被绑定了，请勿重复绑定"),
 
     /**
