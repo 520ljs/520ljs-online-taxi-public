@@ -1,5 +1,7 @@
 package com.ss.servicedriveruser.service;
 
+import com.ss.internalcommon.constant.CommonStatusEnum;
+import com.ss.internalcommon.constant.DriverCarConstants;
 import com.ss.internalcommon.dto.DriverUser;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.servicedriveruser.mapper.DriverUserMapper;
@@ -10,6 +12,9 @@ import javax.annotation.Resource;
 import java.sql.Driver;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Author:ljy.s
@@ -45,6 +50,19 @@ public class DriverUserService {
         driverUser.setGmtModified(now);
         driverUserMapper.updateById(driverUser);
         return ResponseResult.success("");
+    }
+
+    public ResponseResult<DriverUser> getDriverUserByPhone(String driverPhone) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("driver_phone", driverPhone);
+        map.put("state", DriverCarConstants.DRIVER_STATE_VALID);
+        List<DriverUser> driverUsers = driverUserMapper.selectByMap(map);
+        if (driverUsers.isEmpty()) {// 如果为空，返回司机不存在信息
+            return ResponseResult.fail(CommonStatusEnum.DRIVER_NOT_EXITS.getCode(), CommonStatusEnum.DRIVER_NOT_EXITS.getValue());
+        }
+        // 存在，取出司机信息
+        DriverUser driverUser = driverUsers.get(0);
+        return ResponseResult.success(driverUser);
     }
 
 }
