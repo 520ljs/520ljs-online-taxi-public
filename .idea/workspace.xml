@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/remote/ServiceVerificationCodeClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/remote/ServiceDriverUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/remote/ServiceDriverUserClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/DriverCarConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/DriverCarConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +112,7 @@
       <recent name="com.ss.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiDriverApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -349,7 +347,7 @@
       <workItem from="1681348243685" duration="19342000" />
       <workItem from="1681436136728" duration="11578000" />
       <workItem from="1681569121617" duration="5617000" />
-      <workItem from="1681648536795" duration="4129000" />
+      <workItem from="1681648536795" duration="5565000" />
     </task>
     <servers />
   </component>
