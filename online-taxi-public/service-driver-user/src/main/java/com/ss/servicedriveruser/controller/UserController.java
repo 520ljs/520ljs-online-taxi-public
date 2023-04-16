@@ -1,6 +1,7 @@
 package com.ss.servicedriveruser.controller;
 
 import com.ss.internalcommon.constant.CommonStatusEnum;
+import com.ss.internalcommon.constant.DriverCarConstants;
 import com.ss.internalcommon.dto.DriverUser;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.response.DriverUserExistsResponse;
@@ -55,14 +56,15 @@ public class UserController {
      * @return
      */
     @GetMapping("/check-driver/{driverPhone}")
-    public ResponseResult getUser(@PathVariable("driverPhone") String driverPhone) {
+    public ResponseResult<DriverUserExistsResponse> getUser(@PathVariable("driverPhone") String driverPhone) {
 
         ResponseResult<DriverUser> driverUserByPhone = driverUserService.getDriverUserByPhone(driverPhone);
         DriverUser driverUserDB = driverUserByPhone.getData();
         DriverUserExistsResponse response = new DriverUserExistsResponse();
-        int ifExists = 1;
+
+        int ifExists = DriverCarConstants.DRIVER_EXISTS;
         if (driverUserDB == null) {
-            ifExists = 0;
+            ifExists = DriverCarConstants.DRIVER_NOT_EXISTS;
             response.setDriverPhone(driverPhone);
             response.setIfExists(ifExists);
         } else {
