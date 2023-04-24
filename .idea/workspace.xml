@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/remote/ServiceVerificationCodeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/service/VerificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/RedisPrefixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/RedisPrefixUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/InterceptorConfig.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/ForecastPriceService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/TokenService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/DicDistrictController.java" root0="FORCE_HIGHLIGHTING" />
@@ -82,7 +86,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public/online-taxi-public/api-driver&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -267,10 +271,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MysqlGenerator" />
-        <item itemvalue="Application.ForecastPriceService" />
         <item itemvalue="Application.NumberCodeController" />
+        <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="Application.JwtUtils" />
+        <item itemvalue="Application.ForecastPriceService" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +351,24 @@
       <workItem from="1681348243685" duration="19342000" />
       <workItem from="1681436136728" duration="11578000" />
       <workItem from="1681569121617" duration="5617000" />
-      <workItem from="1681648536795" duration="5565000" />
+      <workItem from="1681648536795" duration="6379000" />
+      <workItem from="1681698170710" duration="9000" />
+      <workItem from="1681711192860" duration="2288000" />
+      <workItem from="1681716152247" duration="6412000" />
+      <workItem from="1681805974255" duration="1378000" />
+      <workItem from="1681811431067" duration="599000" />
+      <workItem from="1681885859183" duration="2867000" />
+      <workItem from="1681896609328" duration="266000" />
+      <workItem from="1681897677797" duration="106000" />
+      <workItem from="1681906570870" duration="690000" />
+      <workItem from="1681909591417" duration="703000" />
+      <workItem from="1681910307576" duration="599000" />
+      <workItem from="1681927127460" duration="52000" />
+      <workItem from="1681953044823" duration="11000" />
+      <workItem from="1681953605352" duration="1213000" />
+      <workItem from="1682040803015" duration="1794000" />
+      <workItem from="1682058880598" duration="1013000" />
+      <workItem from="1682354903721" duration="3100000" />
     </task>
     <servers />
   </component>

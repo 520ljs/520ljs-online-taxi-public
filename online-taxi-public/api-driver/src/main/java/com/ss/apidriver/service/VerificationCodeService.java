@@ -4,14 +4,19 @@ import com.ss.apidriver.remote.ServiceDriverUserClient;
 import com.ss.apidriver.remote.ServiceVerificationCodeClient;
 import com.ss.internalcommon.constant.CommonStatusEnum;
 import com.ss.internalcommon.constant.DriverCarConstants;
+import com.ss.internalcommon.constant.IdentityConstants;
 import com.ss.internalcommon.dto.DriverUser;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.response.DriverUserExistsResponse;
 import com.ss.internalcommon.response.NumberCodeResponse;
+import com.ss.internalcommon.util.RedisPrefixUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author:ljy.s
@@ -26,6 +31,9 @@ public class VerificationCodeService {
 
     @Resource
     ServiceVerificationCodeClient serviceVerificationCodeClient;
+
+    @Resource
+    StringRedisTemplate stringRedisTemplate;
 
     public ResponseResult checkAndsendVerificationCode(String driverPhone) {
         // 查询 service-driver-user 判断改手机号的司机是否存在
@@ -46,6 +54,8 @@ public class VerificationCodeService {
         // 调用第三方服务发送验证码,第三方：阿里短信服务，腾讯，华信，容联
 
         // 存入redis，1：key，2：存入Redis
+        String key = RedisPrefixUtils.generatorKeyByPhone(driverPhone, IdentityConstants.DRIVER_IDENTITY);
+        stringRedisTemplate.opsForValue().set(key, numberCode + "", 2, TimeUnit.MINUTES);
 
         return ResponseResult.success("");
     }

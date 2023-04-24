@@ -19,8 +19,7 @@
 *.tar.gz
 *.rar
 
-# 忽略
-.gitignore
+# 更多需要忽略的
 **/target
 **/.mvn
 **/.idea
