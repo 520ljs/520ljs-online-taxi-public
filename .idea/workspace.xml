@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/controller/VerificationCodeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/RedisPrefixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/util/RedisPrefixUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-verificationcode/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.25862068&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
     &quot;settings.editor.splitter.proportion&quot;: &quot;0.23316498&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;b08805396dd47ee4208e9ccaeb2759fb&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -116,7 +113,14 @@
       <recent name="com.ss.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Compound.司机校验验证码">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -183,6 +187,12 @@
     <configuration name="乘客用户服务中心系列2" type="CompoundRunConfigurationType">
       <toRun name="ServicePassengerUserApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="司机校验验证码" type="CompoundRunConfigurationType">
+      <toRun name="ApiDriverApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ServiceDriverUserApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ServiceVerificationcodeApplication" type="SpringBootApplicationConfigurationType" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType">
@@ -257,14 +267,15 @@
       <item itemvalue="Application.ForecastPriceService" />
       <item itemvalue="Application.JwtUtils" />
       <item itemvalue="Application.NumberCodeController" />
+      <item itemvalue="Compound.司机校验验证码" />
       <item itemvalue="Compound.预估价格服务系列" />
       <item itemvalue="Compound.乘客用户服务中心系列1" />
       <item itemvalue="Compound.乘客用户服务中心系列2" />
+      <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ApiBossApplication" />
       <item itemvalue="Spring Boot.ApiDriverApplication" />
       <item itemvalue="Spring Boot.ServiceDriverUserApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
-      <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePriceApplication" />
       <item itemvalue="Spring Boot.ServiceMapApplication" />
@@ -369,6 +380,9 @@
       <workItem from="1682040803015" duration="1794000" />
       <workItem from="1682058880598" duration="1013000" />
       <workItem from="1682354903721" duration="3100000" />
+      <workItem from="1682384745551" duration="877000" />
+      <workItem from="1682470911013" duration="1222000" />
+      <workItem from="1682580425453" duration="7452000" />
     </task>
     <servers />
   </component>
