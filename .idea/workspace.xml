@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/interceptor/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/interceptor/JwtInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/controller/VerificationCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/service/VerificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/interceptor/InterceptorConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +85,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public/online-taxi-public/api-driver/src/main/java/com/ss/apidriver&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -102,6 +104,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public\online-taxi-public\api-driver\src\main\java\com\ss\apidriver" />
       <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public\online-taxi-public\sql" />
       <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public" />
     </key>
@@ -120,7 +123,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Compound.司机校验验证码">
+  <component name="RunManager" selected="Spring Boot.ApiDriverApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -267,7 +270,6 @@
       <item itemvalue="Application.ForecastPriceService" />
       <item itemvalue="Application.JwtUtils" />
       <item itemvalue="Application.NumberCodeController" />
-      <item itemvalue="Compound.司机校验验证码" />
       <item itemvalue="Compound.预估价格服务系列" />
       <item itemvalue="Compound.乘客用户服务中心系列1" />
       <item itemvalue="Compound.乘客用户服务中心系列2" />
@@ -382,7 +384,9 @@
       <workItem from="1682354903721" duration="3100000" />
       <workItem from="1682384745551" duration="877000" />
       <workItem from="1682470911013" duration="1222000" />
-      <workItem from="1682580425453" duration="7452000" />
+      <workItem from="1682580425453" duration="7960000" />
+      <workItem from="1682643794245" duration="4654000" />
+      <workItem from="1682774453048" duration="2638000" />
     </task>
     <servers />
   </component>
