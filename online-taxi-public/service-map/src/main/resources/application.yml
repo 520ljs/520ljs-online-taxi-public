@@ -17,3 +17,4 @@ spring:
 # 自定义的 key：value
 amap:
   key: cd43a1c199b9c868b12353f874ca50d6
+  sid: 934218

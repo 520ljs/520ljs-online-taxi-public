@@ -25,6 +25,11 @@ public class ServiceClient {
     @Resource
     private RestTemplate restTemplate;
 
+    /**
+     * 创建服务
+     * @param name
+     * @return
+     */
     public ResponseResult add(String name) {
         // &key=<用户的key>
         // 拼装请求的url
