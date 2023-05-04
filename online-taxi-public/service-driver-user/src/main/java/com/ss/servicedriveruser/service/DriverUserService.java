@@ -3,8 +3,10 @@ package com.ss.servicedriveruser.service;
 import com.ss.internalcommon.constant.CommonStatusEnum;
 import com.ss.internalcommon.constant.DriverCarConstants;
 import com.ss.internalcommon.dto.DriverUser;
+import com.ss.internalcommon.dto.DriverUserWorkStatus;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.servicedriveruser.mapper.DriverUserMapper;
+import com.ss.servicedriveruser.mapper.DriverUserWorkStatusMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +28,9 @@ public class DriverUserService {
     @Resource
     private DriverUserMapper driverUserMapper;
 
+    @Resource
+    private DriverUserWorkStatusMapper driverUserWorkStatusMapper;
+
     public ResponseResult testGetDriverUser() {
 
         DriverUser driverUser = driverUserMapper.selectById(1);
@@ -33,17 +38,37 @@ public class DriverUserService {
 
     }
 
+    /**
+     * 添加司机
+     *
+     * @param driverUser
+     * @return
+     */
     public ResponseResult addDriverUser(DriverUser driverUser) {
         LocalDateTime now = LocalDateTime.now();
         // 设置创建时间
         driverUser.setGmtCreate(now);
         // 设置修改时间
         driverUser.setGmtModified(now);
-
         driverUserMapper.insert(driverUser);
+
+        // 初始化 司机工作状态表
+        DriverUserWorkStatus driverUserWorkStatus = new DriverUserWorkStatus();
+        driverUserWorkStatus.setDriverId(driverUser.getId());
+        driverUserWorkStatus.setWorkStatus(DriverCarConstants.DRIVER_WORK_STATUS_STOP);
+        driverUserWorkStatus.setGmtModified(now);
+        driverUserWorkStatus.setGmtCreate(now);
+        driverUserWorkStatusMapper.insert(driverUserWorkStatus);
+
         return ResponseResult.success("");
     }
 
+    /**
+     * 更新司机信息
+     *
+     * @param driverUser
+     * @return
+     */
     public ResponseResult updateDriverUser(DriverUser driverUser) {
         LocalDateTime now = LocalDateTime.now();
         // 设置当前修改时间
@@ -52,6 +77,12 @@ public class DriverUserService {
         return ResponseResult.success("");
     }
 
+    /**
+     * 根据司机电话查询司机信息
+     *
+     * @param driverPhone
+     * @return
+     */
     public ResponseResult<DriverUser> getDriverUserByPhone(String driverPhone) {
         Map<String, Object> map = new HashMap<>();
         map.put("driver_phone", driverPhone);
