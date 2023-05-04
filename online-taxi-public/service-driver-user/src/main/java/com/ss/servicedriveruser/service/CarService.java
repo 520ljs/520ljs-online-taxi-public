@@ -3,6 +3,7 @@ package com.ss.servicedriveruser.service;
 import com.ss.internalcommon.dto.Car;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.response.TerminalResponse;
+import com.ss.internalcommon.response.TrackResponse;
 import com.ss.servicedriveruser.mapper.CarMapper;
 import com.ss.servicedriveruser.remote.ServiceMapClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,14 @@ public class CarService {
         ResponseResult<TerminalResponse> responseResult = serviceMapClient.addTerminal(car.getVehicleNo(), car.getId() + "");
         String tid = responseResult.getData().getTid();
         car.setTid(tid);
+
+        // 获得此车辆的轨迹id：trid
+        ResponseResult<TrackResponse> trackResponseResponseResult = serviceMapClient.addTrack(tid);
+        String trid = trackResponseResponseResult.getData().getTrid();
+        String trname = trackResponseResponseResult.getData().getTrname();
+
+        car.setTrid(trid);
+        car.setTrname(trname);
 
         // 保存车辆
         carMapper.insert(car);
