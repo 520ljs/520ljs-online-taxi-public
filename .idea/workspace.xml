@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/地图信息" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/地图信息" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/ServiceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/controller/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/ServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/service/ServiceFromMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/online-taxi-2022-public",
+    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/Simple/DataStructureAlgorithm",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,7 +123,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ss.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -385,7 +388,7 @@
       <workItem from="1682643794245" duration="4654000" />
       <workItem from="1682774453048" duration="3920000" />
       <workItem from="1683126356627" duration="2396000" />
-      <workItem from="1683162397050" duration="7321000" />
+      <workItem from="1683162397050" duration="14141000" />
     </task>
     <servers />
   </component>
