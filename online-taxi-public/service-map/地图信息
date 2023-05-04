@@ -1,6 +1,19 @@
+服务管理：
 {
     "data": {
         "name": "飞滴出行service-map",
+        "sid": 934218
+    },
+    "errcode": 10000,
+    "errdetail": null,
+    "errmsg": "OK"
+}
+
+创建终端：
+{
+    "data": {
+        "name": "车辆1",
+        "tid": 682073470,
         "sid": 934218
     },
     "errcode": 10000,
