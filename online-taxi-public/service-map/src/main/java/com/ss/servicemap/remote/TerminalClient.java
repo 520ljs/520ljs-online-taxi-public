@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.beans.factory.annotation.Value;
 
+import javax.annotation.Resource;
+
 /**
  * @Author:ljy.s
  * @Date:2023/5/4 - 05 - 04 - 16:41
@@ -23,7 +25,7 @@ public class TerminalClient {
     @Value("${amap.sid}")
     private String amapSid;
 
-    @Autowired
+    @Resource
     private RestTemplate restTemplate;
 
     /**

@@ -21,6 +21,7 @@ import java.util.Map;
  */
 @Service
 public class DriverUserWorkStatusService {
+
     @Resource
     DriverUserWorkStatusMapper driverUserWorkStatusMapper;
 
