@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @Author:ljy.s
@@ -27,6 +28,17 @@ public class TerminalService {
     public ResponseResult<TerminalResponse> add(String name , String desc){
 
         return terminalClient.add(name , desc);
+    }
+
+    /**
+     * 终端搜索
+     * @param center
+     * @param radius
+     * @return
+     */
+    public ResponseResult<List<TerminalResponse>> aroundsearch(String center, Integer radius){
+
+        return terminalClient.aroundsearch(center,radius);
     }
 
 }
