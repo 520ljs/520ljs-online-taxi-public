@@ -47,3 +47,17 @@
     "errdetail": "PARTIAL_SUCCESS",
     "errmsg": "OK"
 }
+
+创建终端：
+{
+    "code": 1,
+    "message": "success",
+    "data": {
+        "tid": "682908441",
+        "carId": null,
+        "longitude": null,
+        "latitude": null
+    }
+}
+创建终端请求：https://tsapi.amap.com/v1/track/terminal/add?key=cd43a1c199b9c868b12353f874ca50d6&sid=934218&name=京Na16532&desc=100002
+创建终端响应：{"data":{"name":"京Na16532","tid":682908441,"sid":934218},"errcode":10000,"errdetail":null,"errmsg":"OK"}
