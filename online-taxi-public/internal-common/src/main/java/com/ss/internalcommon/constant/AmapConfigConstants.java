@@ -32,6 +32,11 @@ public class AmapConfigConstants {
     public static final String TRACK_ADD = "https://tsapi.amap.com/v1/track/trace/add";
 
     /**
+     * 轨迹点上传
+     */
+    public static final String POINT_UPLOAD = "https://tsapi.amap.com/v1/track/point/upload";
+
+    /**
      * 路径规划 json key值
      * 0：请求失败，1：请求成功
      */
