@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @Author:ljy.s
  * @Date:2023/5/5 - 05 - 05 - 10:53
  */
-//@FeignClient("service-map")
+@FeignClient("service-map")
 public interface ServiceMapClient {
 
     @RequestMapping(method = RequestMethod.POST, value = "/point/upload")

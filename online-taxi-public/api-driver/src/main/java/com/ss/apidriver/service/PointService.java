@@ -21,8 +21,8 @@ public class PointService {
     @Resource
     private ServiceDriverUserClient serviceDriverUserClient;
 
-    /*@Resource
-    private ServiceMapClient serviceMapClient;*/
+    @Resource
+    private ServiceMapClient serviceMapClient;
 
     public ResponseResult upload(ApiDriverPointRequest apiDriverPointRequest) {
         // 获取carId
@@ -34,13 +34,12 @@ public class PointService {
         String tid = car.getTid();
         String trid = car.getTrid();
 
-        // 调用地图去上传
-        /*PointRequest pointRequest = new PointRequest();
+        // 调用地图去上传  （轨迹点上传）
+        PointRequest pointRequest = new PointRequest();
         pointRequest.setTid(tid);
         pointRequest.setTrid(trid);
-        pointRequest.setPoints(apiDriverPointRequest.getPoints());*/
+        pointRequest.setPoints(apiDriverPointRequest.getPoints());
 
-        //return serviceMapClient.upload(pointRequest);
-        return null;
+        return serviceMapClient.upload(pointRequest);
     }
 }
