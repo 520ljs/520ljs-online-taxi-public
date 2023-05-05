@@ -30,6 +30,7 @@ public class CarService {
 
     /**
      * 添加车辆信息
+     *
      * @param car
      * @return
      */
@@ -37,6 +38,9 @@ public class CarService {
         LocalDateTime now = LocalDateTime.now();
         car.setGmtModified(now);
         car.setGmtCreate(now);
+
+        // 保存车辆 (车辆先保存了才有id)
+        carMapper.insert(car);
 
         // 获得此车辆的终端id：tid
         ResponseResult<TerminalResponse> responseResult = serviceMapClient.addTerminal(car.getVehicleNo(), car.getId() + "");
@@ -51,14 +55,15 @@ public class CarService {
         car.setTrid(trid);
         car.setTrname(trname);
 
-        // 保存车辆
-        carMapper.insert(car);
+        // 加入了车辆id之后，更新一下数据
+        carMapper.updateById(car);
 
         return ResponseResult.success("");
     }
 
     /**
      * 根据车辆id查询车辆信息
+     *
      * @param id
      * @return
      */
