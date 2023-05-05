@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Author:ljy.s
@@ -25,6 +28,11 @@ public class CarService {
     @Resource
     private ServiceMapClient serviceMapClient;
 
+    /**
+     * 添加车辆信息
+     * @param car
+     * @return
+     */
     public ResponseResult addCar(Car car) {
         LocalDateTime now = LocalDateTime.now();
         car.setGmtModified(now);
@@ -47,6 +55,20 @@ public class CarService {
         carMapper.insert(car);
 
         return ResponseResult.success("");
+    }
+
+    /**
+     * 根据车辆id查询车辆信息
+     * @param id
+     * @return
+     */
+    public ResponseResult<Car> getCarById(Long id) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("id", id);
+
+        List<Car> cars = carMapper.selectByMap(map);
+
+        return ResponseResult.success(cars.get(0));
     }
 
 }
