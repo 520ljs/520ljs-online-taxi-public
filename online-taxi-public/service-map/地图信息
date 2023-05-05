@@ -9,14 +9,41 @@
     "errmsg": "OK"
 }
 
-创建终端：
+---
+终端：
 {
     "data": {
-        "name": "车辆1",
-        "tid": 682073470,
+        "name": "车辆6",
+        "tid": 682872959,
         "sid": 934218
     },
     "errcode": 10000,
     "errdetail": null,
+    "errmsg": "OK"
+}
+轨迹：
+{
+    "data": {
+        "trname": "车辆6的轨迹",
+        "trid": 300
+    },
+    "errcode": 10000,
+    "errdetail": null,
+    "errmsg": "OK"
+}
+位置：
+{
+    "data": {
+        "errorpoints": [
+            {
+                "_param_err_info": "locatetime",
+                "_err_point_index": 0,
+                "location": "116.38,39.97",
+                "locatetime": 1683268068
+            }
+        ]
+    },
+    "errcode": 20100,
+    "errdetail": "PARTIAL_SUCCESS",
     "errmsg": "OK"
 }
