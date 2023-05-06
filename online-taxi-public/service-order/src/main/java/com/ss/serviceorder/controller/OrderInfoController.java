@@ -28,15 +28,23 @@ public class OrderInfoController {
     @Resource
     OrderInfoService orderInfoService;
 
-    @PostMapping("/add")
-    public ResponseResult add(@RequestBody OrderRequest orderRequest) {
-
-        log.info("service-order" + orderRequest.getAddress());
-        return null;
-    }
-
     @GetMapping("/testMapper")
     public String testMapper() {
         return orderInfoService.testMapper();
     }
+
+    /**
+     * 创建订单
+     *
+     * @param orderRequest
+     * @return
+     */
+    @PostMapping("/add")
+    public ResponseResult add(@RequestBody OrderRequest orderRequest) {
+
+        log.info("service-order" + orderRequest.getAddress());
+
+        return orderInfoService.add(orderRequest);
+    }
+
 }

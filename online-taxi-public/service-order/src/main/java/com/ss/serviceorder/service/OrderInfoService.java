@@ -1,7 +1,10 @@
 package com.ss.serviceorder.service;
 
 import com.ss.internalcommon.dto.OrderInfo;
+import com.ss.internalcommon.dto.ResponseResult;
+import com.ss.internalcommon.request.OrderRequest;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -30,6 +33,22 @@ public class OrderInfoService {
         o.setAddress("110000");
         orderInfoMapper.insert(o);
         return "";
+    }
+
+    /**
+     * 创建订单
+     *
+     * @param orderRequest
+     * @return
+     */
+    public ResponseResult add(OrderRequest orderRequest) {
+        // 创建订单
+        OrderInfo orderInfo = new OrderInfo();
+        BeanUtils.copyProperties(orderRequest, orderInfo);
+
+        orderInfoMapper.insert(orderInfo);
+
+        return ResponseResult.success();
     }
 
 }
