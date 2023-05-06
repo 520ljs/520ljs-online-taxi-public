@@ -1,5 +1,6 @@
 package com.ss.serviceorder.service;
 
+import com.ss.internalcommon.constant.OrderConstants;
 import com.ss.internalcommon.dto.OrderInfo;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
@@ -8,6 +9,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -44,7 +46,14 @@ public class OrderInfoService {
     public ResponseResult add(OrderRequest orderRequest) {
         // 创建订单
         OrderInfo orderInfo = new OrderInfo();
+        // 请求参数,实体类
         BeanUtils.copyProperties(orderRequest, orderInfo);
+        // 设置状态
+        orderInfo.setOrderStatus(OrderConstants.ORDER_START);
+        // 设置时间
+        LocalDateTime now = LocalDateTime.now();
+        orderInfo.setGmtCreate(now);
+        orderInfo.setGmtModified(now);
 
         orderInfoMapper.insert(orderInfo);
 
