@@ -1,38 +1,27 @@
-package com.ss.application.controller;
+package com.ss.serviceorder.controller;
 
-import com.ss.application.service.OrderService;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-
 /**
  * @Author:ljy.s
- * @Date:2023/5/6 - 05 - 06 - 9:58
+ * @Date:2023/5/6 - 05 - 06 - 11:28
  */
 @RestController
 @RequestMapping("/order")
-public class OrderController {
+@Slf4j
+public class OrderInfoController {
 
-    @Resource
-    OrderService orderService;
-
-    /**
-     * 创建订单/下单
-     *
-     * @return
-     */
     @PostMapping("/add")
     public ResponseResult add(@RequestBody OrderRequest orderRequest) {
 
-        System.out.println(orderRequest);
-        orderService.add(orderRequest);
-        return ResponseResult.success("");
+        log.info("service-order"+orderRequest.getAddress());
+        return null;
     }
 
 }

@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/ServiceOrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/test/java/com/ss/serviceorder/ServiceOrderApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/端口管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/端口管理.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/remote/ServiceOrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/controller/OrderInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public/online-taxi-public/service-order",
+    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,7 +94,7 @@
     "project.structure.side.proportion": "0.25862068",
     "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
     "settings.editor.splitter.proportion": "0.23316498",
-    "spring.configuration.checksum": "b08805396dd47ee4208e9ccaeb2759fb",
+    "spring.configuration.checksum": "ea1596292b30563248b9ad1cbfdd3cda",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -403,7 +400,8 @@
       <workItem from="1683335568109" duration="3247000" />
       <workItem from="1683340968292" duration="274000" />
       <workItem from="1683341250245" duration="505000" />
-      <workItem from="1683341759445" duration="1497000" />
+      <workItem from="1683341759445" duration="1884000" />
+      <workItem from="1683343651610" duration="1253000" />
     </task>
     <servers />
   </component>
