@@ -1,27 +1,42 @@
 package com.ss.serviceorder.controller;
 
+
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
+import com.ss.serviceorder.mapper.OrderInfoMapper;
+import com.ss.serviceorder.service.OrderInfoService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import org.springframework.stereotype.Controller;
+
+import javax.annotation.Resource;
 
 /**
- * @Author:ljy.s
- * @Date:2023/5/6 - 05 - 06 - 11:28
+ * <p>
+ * 前端控制器
+ * </p>
+ *
+ * @author 520ljs
+ * @since 2023-05-06
  */
 @RestController
 @RequestMapping("/order")
 @Slf4j
 public class OrderInfoController {
 
+    @Resource
+    OrderInfoService orderInfoService;
+
     @PostMapping("/add")
     public ResponseResult add(@RequestBody OrderRequest orderRequest) {
 
-        log.info("service-order"+orderRequest.getAddress());
+        log.info("service-order" + orderRequest.getAddress());
         return null;
     }
 
+    @GetMapping("/testMapper")
+    public String testMapper() {
+        return orderInfoService.testMapper();
+    }
 }
