@@ -1,5 +1,6 @@
 package com.ss.serviceprice.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ss.internalcommon.constant.CommonStatusEnum;
 import com.ss.internalcommon.dto.PriceRule;
 import com.ss.internalcommon.dto.ResponseResult;
@@ -33,7 +34,12 @@ public class ForecastPriceService {
     @Resource
     private PriceRuleMapper priceRuleMapper;
 
-    public ResponseResult forecastPrice(String depLongitude, String depLatitude, String destLongitude, String destLatitude) {
+    public ResponseResult forecastPrice(String depLongitude,
+                                        String depLatitude,
+                                        String destLongitude,
+                                        String destLatitude,
+                                        String cityCode,
+                                        String vehicleType) {
 
         log.info("出发地经度：" + depLongitude);
         log.info("出发地维度：" + depLatitude);
@@ -50,13 +56,18 @@ public class ForecastPriceService {
         ResponseResult<DirectionResponse> direction = serviceMapClient.direction(forecastPriceDTO);
         Integer distance = direction.getData().getDistance();
         Integer duration = direction.getData().getDuration();
+
         log.info("距离：" + distance + "，时长：" + duration);
 
         log.info("读取计价规则");
-        Map<String, Object> queryMap = new HashMap<>();
-        queryMap.put("city_code", "110000");
-        queryMap.put("vehicle_type", "1");
-        List<PriceRule> priceRules = priceRuleMapper.selectByMap(queryMap);
+
+        // 取最新版本的数据
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("city_code",cityCode);
+        queryWrapper.eq("vehicle_type",vehicleType);
+        queryWrapper.orderByDesc("fare_version");
+
+        List<PriceRule> priceRules = priceRuleMapper.selectList(queryWrapper);
         if (priceRules.size() == 0) {// 如果不存在，返回计价规则不存在错误
             return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPTY.getCode(), CommonStatusEnum.PRICE_RULE_EMPTY.getValue());
         }
@@ -67,8 +78,12 @@ public class ForecastPriceService {
         log.info("根据距离、时长和计价规则，计算价格");
         double price = getPrice(distance, duration, priceRule);
 
+        // 返回响应内容
         ForecastPriceResponse forecastPriceResponse = new ForecastPriceResponse();
         forecastPriceResponse.setPrice(price);
+        forecastPriceResponse.setCityCode(cityCode);
+        forecastPriceResponse.setVehicleType(vehicleType);
+
         return ResponseResult.success(forecastPriceResponse);
     }
 
