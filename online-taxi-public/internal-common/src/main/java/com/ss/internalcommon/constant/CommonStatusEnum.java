@@ -38,6 +38,8 @@ public enum CommonStatusEnum {
 
     PRICE_RULE_EXISTS(1301,"计价规则已存在，不允许添加"),
 
+    PRICE_RULE_NOT_EDIT(1302,"计价规则没有变化"),
+
     /**
      * 用户提示：1200-1299
      */
