@@ -20,10 +20,11 @@ public class ResponseResult<T> {
 
     /**
      * 成功响应的方法(无参)
+     *
      * @param <T>
      * @return
      */
-    public static <T> ResponseResult success(){
+    public static <T> ResponseResult success() {
         return new ResponseResult().setCode(CommonStatusEnum.SUCCESS.getCode()).setMessage(CommonStatusEnum.SUCCESS.getValue());
     }
 
@@ -40,11 +41,12 @@ public class ResponseResult<T> {
 
     /**
      * 失败：统一的失败
+     *
      * @param data
      * @param <T>
      * @return
      */
-    public static <T> ResponseResult fail(T data){
+    public static <T> ResponseResult fail(T data) {
         return new ResponseResult().setData(data);
     }
 

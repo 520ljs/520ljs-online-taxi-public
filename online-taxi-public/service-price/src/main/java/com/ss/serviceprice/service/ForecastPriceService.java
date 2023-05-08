@@ -63,13 +63,13 @@ public class ForecastPriceService {
 
         // 取最新版本的数据
         QueryWrapper queryWrapper = new QueryWrapper();
-        queryWrapper.eq("city_code",cityCode);
-        queryWrapper.eq("vehicle_type",vehicleType);
+        queryWrapper.eq("city_code", cityCode);
+        queryWrapper.eq("vehicle_type", vehicleType);
         queryWrapper.orderByDesc("fare_version");
 
         List<PriceRule> priceRules = priceRuleMapper.selectList(queryWrapper);
         if (priceRules.size() == 0) {// 如果不存在，返回计价规则不存在错误
-            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPTY.getCode(), CommonStatusEnum.PRICE_RULE_EMPTY.getValue());
+            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPTY.getCode(), CommonStatusEnum.PRICE_RULE_EMPTY.getValue(), "");
         }
         // 取出计价规则
         PriceRule priceRule = priceRules.get(0);
@@ -83,6 +83,8 @@ public class ForecastPriceService {
         forecastPriceResponse.setPrice(price);
         forecastPriceResponse.setCityCode(cityCode);
         forecastPriceResponse.setVehicleType(vehicleType);
+        forecastPriceResponse.setFareType(priceRule.getFareType());
+        forecastPriceResponse.setFareVersion(priceRule.getFareVersion());
 
         return ResponseResult.success(forecastPriceResponse);
     }

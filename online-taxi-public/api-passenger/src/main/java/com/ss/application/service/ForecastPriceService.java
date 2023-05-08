@@ -51,16 +51,10 @@ public class ForecastPriceService {
         forecastPriceDTO.setDestLatitude(destLatitude);
         forecastPriceDTO.setCityCode(cityCode);
         forecastPriceDTO.setVehicleType(vehicleType);
+
         ResponseResult<ForecastPriceResponse> forecast = servicePriceClient.forecast(forecastPriceDTO);
-        double price = forecast.getData().getPrice();
 
-        // 返回响应参数
-        ForecastPriceResponse forecastPriceResponse = new ForecastPriceResponse();
-        forecastPriceResponse.setPrice(price);
-        forecastPriceResponse.setCityCode(cityCode);
-        forecastPriceResponse.setVehicleType(vehicleType);
-
-        return ResponseResult.success(forecastPriceResponse);
+        return ResponseResult.success(forecast.getData());
     }
 
 }

@@ -49,7 +49,8 @@ public class PriceRuleService {
         Integer fareVersion = 0;
         // 如果计价规则存在，不允许添加
         if (priceRules.size() > 0) {
-            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EXISTS.getCode(), CommonStatusEnum.PRICE_RULE_EXISTS.getValue(), "");
+            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EXISTS.getCode(),
+                    CommonStatusEnum.PRICE_RULE_EXISTS.getValue(), "");
         }
         priceRule.setFareVersion(++fareVersion);
 
@@ -91,7 +92,8 @@ public class PriceRuleService {
                     && unitPricePerMinute.doubleValue() == priceRule.getUnitPricePerMinute().doubleValue()
                     && startFare.doubleValue() == priceRule.getStartFare().doubleValue()
                     && startMile.intValue() == priceRule.getStartMile().intValue()) {
-                return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_NOT_EDIT.getCode(), CommonStatusEnum.PRICE_RULE_NOT_EDIT.getValue(), "");
+                return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_NOT_EDIT.getCode(),
+                        CommonStatusEnum.PRICE_RULE_NOT_EDIT.getValue(), "");
             }
             fareVersion = lasterPriceRule.getFareVersion();
         }
