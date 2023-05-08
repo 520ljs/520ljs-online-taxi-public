@@ -1,10 +1,12 @@
 package com.ss.serviceorder.service;
 
+import com.ss.internalcommon.constant.CommonStatusEnum;
 import com.ss.internalcommon.constant.OrderConstants;
 import com.ss.internalcommon.dto.OrderInfo;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
+import com.ss.serviceorder.remote.ServicePriceClient;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +27,9 @@ public class OrderInfoService {
     @Resource
     OrderInfoMapper orderInfoMapper;
 
+    @Resource
+    ServicePriceClient servicePriceClient;
+
     /**
      * 测试添加数据
      *
@@ -44,6 +49,13 @@ public class OrderInfoService {
      * @return
      */
     public ResponseResult add(OrderRequest orderRequest) {
+
+        // 需要判断计价规则的版本是否为最新
+        ResponseResult<Boolean> aNew = servicePriceClient.isNew(orderRequest.getFareType(), orderRequest.getFareVersion());
+        if (!aNew.getData()) {
+            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_CHANGED.getCode(), CommonStatusEnum.PRICE_RULE_CHANGED.getValue(), "");
+        }
+
         // 创建订单
         OrderInfo orderInfo = new OrderInfo();
         // 请求参数,实体类
@@ -57,7 +69,7 @@ public class OrderInfoService {
 
         orderInfoMapper.insert(orderInfo);
 
-        return ResponseResult.success();
+        return ResponseResult.success("");
     }
 
 }
