@@ -36,11 +36,11 @@ public enum CommonStatusEnum {
      */
     PRICE_RULE_EMPTY(1300, "计价规则不存在"),
 
-    PRICE_RULE_EXISTS(1301,"计价规则已存在，不允许添加"),
+    PRICE_RULE_EXISTS(1301, "计价规则已存在，不允许添加"),
 
-    PRICE_RULE_NOT_EDIT(1302,"计价规则没有变化"),
+    PRICE_RULE_NOT_EDIT(1302, "计价规则没有变化"),
 
-    PRICE_RULE_CHANGED(1303,"计价规则有变化"),
+    PRICE_RULE_CHANGED(1303, "计价规则有变化"),
 
     /**
      * 用户提示：1200-1299
@@ -60,7 +60,12 @@ public enum CommonStatusEnum {
     /**
      * 订单：1600-1699
      */
-    ORDER_GOING_ON(1600,"有正在进行的订单"),
+    ORDER_GOING_ON(1600, "有正在进行的订单"),
+
+    /**
+     * 下单异常
+     */
+    DEVICE_IS_BLACK(1601, "该设备超过下单次数"),
 
     /**
      * 成功

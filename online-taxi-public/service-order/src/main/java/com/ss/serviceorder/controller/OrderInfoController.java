@@ -1,6 +1,7 @@
 package com.ss.serviceorder.controller;
 
 
+import com.ss.internalcommon.constant.HeaderParamConstants;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * <p>
@@ -40,11 +42,14 @@ public class OrderInfoController {
      * @return
      */
     @PostMapping("/add")
-    public ResponseResult add(@RequestBody OrderRequest orderRequest) {
+    public ResponseResult add(@RequestBody OrderRequest orderRequest, HttpServletRequest httpServletRequest) {
+
+        // 测试通过，通过header获取deviceCode
+        /*String deviceCode = httpServletRequest.getHeader(HeaderParamConstants.DEVICE_CODE);
+        orderRequest.setDeviceCode(deviceCode);*/
 
         log.info("service-order" + orderRequest.getAddress());
 
         return orderInfoService.add(orderRequest);
     }
-
 }

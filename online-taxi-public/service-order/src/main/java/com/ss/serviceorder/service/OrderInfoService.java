@@ -6,14 +6,17 @@ import com.ss.internalcommon.constant.OrderConstants;
 import com.ss.internalcommon.dto.OrderInfo;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
+import com.ss.internalcommon.util.RedisPrefixUtils;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
 import com.ss.serviceorder.remote.ServicePriceClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -33,6 +36,9 @@ public class OrderInfoService {
 
     @Resource
     ServicePriceClient servicePriceClient;
+
+    @Resource
+    StringRedisTemplate stringRedisTemplate;
 
     /**
      * 测试添加数据
@@ -60,6 +66,11 @@ public class OrderInfoService {
             return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_CHANGED.getCode(), CommonStatusEnum.PRICE_RULE_CHANGED.getValue(), "");
         }
 
+        // 需要判断 下单的设备是否是 黑名单设备
+        if (isBlackDevice(orderRequest)) {
+            return ResponseResult.fail(CommonStatusEnum.DEVICE_IS_BLACK.getCode(), CommonStatusEnum.DEVICE_IS_BLACK.getValue(), "");
+        }
+
         // 判断乘客 是否有进行中的订单
         if (isPassengerOrderGoing(orderRequest.getPassengerId()) > 0) {
             return ResponseResult.fail(CommonStatusEnum.ORDER_GOING_ON.getCode(), CommonStatusEnum.ORDER_GOING_ON.getValue(), "");
@@ -81,28 +92,54 @@ public class OrderInfoService {
         return ResponseResult.success("");
     }
 
-
     /**
      * 判断乘客 是否有正在进行中的订单
+     *
      * @param passengerId
      * @return
      */
-    private int isPassengerOrderGoing(Long passengerId){
+    private int isPassengerOrderGoing(Long passengerId) {
         // 判断有正在进行的订单不允许下单
         QueryWrapper<OrderInfo> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("passenger_id",passengerId);
-        queryWrapper.and(wrapper->wrapper.eq("order_status",OrderConstants.ORDER_START)
-                .or().eq("order_status",OrderConstants.DRIVER_RECEIVE_ORDER)
-                .or().eq("order_status",OrderConstants.DRIVER_TO_PICK_UP_PASSENGER)
-                .or().eq("order_status",OrderConstants.DRIVER_ARRIVED_DEPARTURE)
-                .or().eq("order_status",OrderConstants.PICK_UP_PASSENGER)
-                .or().eq("order_status",OrderConstants.PASSENGER_GETOFF)
-                .or().eq("order_status",OrderConstants.TO_START_PAY)
+        queryWrapper.eq("passenger_id", passengerId);
+        queryWrapper.and(wrapper -> wrapper.eq("order_status", OrderConstants.ORDER_START)
+                .or().eq("order_status", OrderConstants.DRIVER_RECEIVE_ORDER)
+                .or().eq("order_status", OrderConstants.DRIVER_TO_PICK_UP_PASSENGER)
+                .or().eq("order_status", OrderConstants.DRIVER_ARRIVED_DEPARTURE)
+                .or().eq("order_status", OrderConstants.PICK_UP_PASSENGER)
+                .or().eq("order_status", OrderConstants.PASSENGER_GETOFF)
+                .or().eq("order_status", OrderConstants.TO_START_PAY)
         );
 
         Integer validOrderNumber = orderInfoMapper.selectCount(queryWrapper);
 
         return validOrderNumber;
+    }
+
+    /**
+     * 是否是黑名单
+     *
+     * @param orderRequest
+     * @return
+     */
+    private boolean isBlackDevice(OrderRequest orderRequest) {
+        String deviceCode = orderRequest.getDeviceCode();
+        // 生成key
+        String deviceCodeKey = RedisPrefixUtils.blackDeviceCodePrefix + deviceCode;
+        Boolean aBoolean = stringRedisTemplate.hasKey(deviceCodeKey);
+        if (aBoolean) {
+            String s = stringRedisTemplate.opsForValue().get(deviceCodeKey);
+            int i = Integer.parseInt(s);
+            if (i >= 2) {
+                // 当前设备超过下单次数
+                return true;
+            } else {
+                stringRedisTemplate.opsForValue().increment(deviceCodeKey);
+            }
+        } else {
+            stringRedisTemplate.opsForValue().setIfAbsent(deviceCodeKey, "1", 1L, TimeUnit.HOURS);
+        }
+        return false;
     }
 
 }
