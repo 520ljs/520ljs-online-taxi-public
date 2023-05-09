@@ -19,6 +19,10 @@ public class TestController {
     @Resource
     private DriverUserService driverUserService;
 
+    // 测试mapper中的xml是否正常使用
+    @Resource
+    DriverUserMapper driverUserMapper;
+
     @GetMapping("/test")
     public String test() {
 
@@ -29,6 +33,12 @@ public class TestController {
     public ResponseResult testDB() {
 
         return driverUserService.testGetDriverUser();
+    }
+
+    @GetMapping("/test-xml")
+    public int testXml(String arg){
+        int i = driverUserMapper.select1("3");
+        return i;
     }
 
 }
