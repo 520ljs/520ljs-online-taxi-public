@@ -9,6 +9,7 @@ import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
 import com.ss.internalcommon.util.RedisPrefixUtils;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
+import com.ss.serviceorder.remote.ServiceDriverUserClient;
 import com.ss.serviceorder.remote.ServicePriceClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -41,6 +42,9 @@ public class OrderInfoService {
     @Resource
     StringRedisTemplate stringRedisTemplate;
 
+    @Resource
+    ServiceDriverUserClient serviceDriverUserClient;
+
     /**
      * 测试添加数据
      *
@@ -60,6 +64,13 @@ public class OrderInfoService {
      * @return
      */
     public ResponseResult add(OrderRequest orderRequest) {
+
+        // 测试当前城市是否有可用的司机
+        ResponseResult<Boolean> availableDriver = serviceDriverUserClient.isAvailableDriver(orderRequest.getAddress());
+        log.info("测试城市是否有司机结果：" + availableDriver.getData());
+        if (!availableDriver.getData()) {
+            return ResponseResult.fail(CommonStatusEnum.CITY_DRIVER_EMPTY.getCode(), CommonStatusEnum.CITY_DRIVER_EMPTY.getValue(), "");
+        }
 
         // 需要判断计价规则的版本是否为最新
         ResponseResult<Boolean> aNew = servicePriceClient.isNew(orderRequest.getFareType(), orderRequest.getFareVersion());

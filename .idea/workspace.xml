@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/CityDriverController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/CityDriverUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/remote/ServiceDriverUserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/mapper/DriverUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/mapper/DriverUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/mapper/DriverUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/mapper/DriverUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/mapper/DriverUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/mapper/DriverUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -425,7 +429,7 @@
       <workItem from="1683343651610" duration="14185000" />
       <workItem from="1683510318565" duration="183000" />
       <workItem from="1683510532638" duration="25727000" />
-      <workItem from="1683595371124" duration="24101000" />
+      <workItem from="1683595371124" duration="29841000" />
     </task>
     <servers />
   </component>

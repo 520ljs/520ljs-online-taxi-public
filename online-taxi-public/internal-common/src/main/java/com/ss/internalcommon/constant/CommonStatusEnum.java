@@ -26,6 +26,8 @@ public enum CommonStatusEnum {
 
     CAR_BIND_EXITS(1504, "车辆已经被绑定了，请勿重复绑定"),
 
+    CITY_DRIVER_EMPTY(1505, "当前城市没有可用的司机"),
+
     /**
      * 地图信息：1400-1499
      */
