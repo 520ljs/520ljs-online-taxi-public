@@ -81,7 +81,7 @@ public class PriceRuleController {
      * @param priceRule
      * @return
      */
-    @GetMapping("/if-exists")
+    @PostMapping("/if-exists")
     public ResponseResult<Boolean> ifExists(@RequestBody PriceRule priceRule) {
 
         return priceRuleService.ifExists(priceRule);

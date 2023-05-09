@@ -137,6 +137,7 @@ public class PriceRuleService {
         ResponseResult<PriceRule> newestVersionPriceRule = getNewestVersion(fareType);
         if (newestVersionPriceRule.getCode() == CommonStatusEnum.PRICE_RULE_EMPTY.getCode()) {
             return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPTY.getCode(), CommonStatusEnum.PRICE_RULE_EMPTY.getValue());
+            //return ResponseResult.success(false);
         }
 
         PriceRule priceRule = newestVersionPriceRule.getData();
