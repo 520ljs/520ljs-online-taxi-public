@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/mapper/DriverUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/mapper/DriverUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/mapper/DriverUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/mapper/DriverUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/mapper/DriverUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ComposerSettings">
     <execution>
@@ -92,7 +95,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.25862068",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "settings.editor.selected.configurable": "advanced.settings",
     "settings.editor.splitter.proportion": "0.23316498",
     "spring.configuration.checksum": "ea1596292b30563248b9ad1cbfdd3cda",
     "vue.rearranger.settings.migration": "true"
@@ -110,6 +113,7 @@
       <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public\online-taxi-public\sql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public\online-taxi-public\service-driver-user\src\main\resources\mapper" />
       <recent name="D:\Java\SourceCode\IDEA_workspace\GitHub\taxi\520ljs-online-taxi-public\online-taxi-public" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -421,7 +425,7 @@
       <workItem from="1683343651610" duration="14185000" />
       <workItem from="1683510318565" duration="183000" />
       <workItem from="1683510532638" duration="25727000" />
-      <workItem from="1683595371124" duration="21728000" />
+      <workItem from="1683595371124" duration="24101000" />
     </task>
     <servers />
   </component>
