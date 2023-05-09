@@ -58,6 +58,11 @@ public enum CommonStatusEnum {
     VERIFICATION_CODE_ERROR(1099, "验证码不正确"),
 
     /**
+     * 订单：1600-1699
+     */
+    ORDER_GOING_ON(1600,"有正在进行的订单"),
+
+    /**
      * 成功
      */
     SUCCESS(1, "success"),
