@@ -7,10 +7,13 @@ import com.ss.internalcommon.dto.OrderInfo;
 import com.ss.internalcommon.dto.PriceRule;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
+import com.ss.internalcommon.response.TerminalResponse;
 import com.ss.internalcommon.util.RedisPrefixUtils;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
 import com.ss.serviceorder.remote.ServiceDriverUserClient;
+import com.ss.serviceorder.remote.ServiceMapClient;
 import com.ss.serviceorder.remote.ServicePriceClient;
+import javafx.scene.layout.BorderImage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -18,6 +21,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -44,6 +48,9 @@ public class OrderInfoService {
 
     @Resource
     ServiceDriverUserClient serviceDriverUserClient;
+
+    @Resource
+    ServiceMapClient serviceMapClient;
 
     /**
      * 测试添加数据
@@ -105,6 +112,9 @@ public class OrderInfoService {
         orderInfo.setGmtModified(now);
 
         orderInfoMapper.insert(orderInfo);
+
+        // 派单
+        dispatchRealTimeOrder(orderInfo);
 
         return ResponseResult.success("");
     }
@@ -180,4 +190,30 @@ public class OrderInfoService {
         return booleanResponseResult.getData();
     }
 
+    /**
+     * 实时订单派单逻辑
+     * @param orderInfo
+     */
+    public void dispatchRealTimeOrder(OrderInfo orderInfo) {
+
+        String depLatitude = orderInfo.getDepLatitude();
+        String depLongitude = orderInfo.getDepLongitude();
+        int radius = 2000;
+        String center = depLatitude + "," + depLongitude;
+
+        ResponseResult<List<TerminalResponse>> listResponseResult = serviceMapClient.terminalAroundSearch(center, radius);
+        List<TerminalResponse> data = listResponseResult.getData();
+        if (data.size() == 0) {
+            radius = 4000;
+            listResponseResult = serviceMapClient.terminalAroundSearch(center, radius);
+                if (listResponseResult.getData().size() == 0) {
+                    radius = 5000;
+                    listResponseResult = serviceMapClient.terminalAroundSearch(center, radius);
+                    if (listResponseResult.getData().size() == 0) {
+                        log.info("此轮派单没找到车，找了2km，4km，5km");
+                    }
+                }
+        }
+
+    }
 }
