@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/TerminalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/TerminalClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +85,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/online-taxi-2022-public/online-taxi-2022-public-master/online-taxi-public",
+    "last_opened_file_path": "D:/1000phone/SourceCode/ljsmr/520ljs-mryy",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -430,7 +430,8 @@
       <workItem from="1684486690141" duration="1288000" />
       <workItem from="1684572988990" duration="6715000" />
       <workItem from="1684742622892" duration="1869000" />
-      <workItem from="1684803483871" duration="3811000" />
+      <workItem from="1684803483871" duration="3938000" />
+      <workItem from="1684890991628" duration="3565000" />
     </task>
     <servers />
   </component>
@@ -450,6 +451,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/TerminalClient.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

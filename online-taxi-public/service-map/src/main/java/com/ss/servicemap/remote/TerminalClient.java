@@ -113,6 +113,7 @@ public class TerminalClient {
             JSONObject jsonObject = results.getJSONObject(i);
             // desc里存的数据是 carId
             String desc = jsonObject.getString("desc");
+            // carId 用Long类型接收
             Long carId = Long.parseLong(desc);
             String tid = jsonObject.getString("tid");
 
