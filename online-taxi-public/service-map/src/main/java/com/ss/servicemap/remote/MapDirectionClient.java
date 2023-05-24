@@ -50,12 +50,12 @@ public class MapDirectionClient {
         urlBuild.append("output=json");
         urlBuild.append("&");
         urlBuild.append("key=" + amapKey);
-        log.info("urlBuild：" + urlBuild.toString());
 
         // 调用高德接口
+        log.info("高德地图，路径规划，请求信息(urlBuild)：" + urlBuild.toString());
         ResponseEntity<String> directionEntity = restTemplate.getForEntity(urlBuild.toString(), String.class);
         String directionString = directionEntity.getBody();
-        log.info("高德地图，路径规划，返回信息：" + directionString);
+        log.info("高德地图，路径规划，返回信息(directionString)：" + directionString);
 
         // 解析接口
         DirectionResponse directionResponse = parseDirectionEntity(directionString);
