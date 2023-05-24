@@ -203,7 +203,7 @@ public class OrderInfoService {
         // 2km
         String depLatitude = orderInfo.getDepLatitude();
         String depLongitude = orderInfo.getDepLongitude();
-        int radius = 2000;
+        // 轨迹
         String center = depLatitude + "," + depLongitude;
 
         List<Integer> radiusList = new ArrayList<>();
@@ -214,14 +214,21 @@ public class OrderInfoService {
         // 搜索结果
         ResponseResult<List<TerminalResponse>> listResponseResult = null;
         for (int i = 0; i < radiusList.size(); i++) {
-            Integer integer = radiusList.get(i);
+            Integer radius = radiusList.get(i);
             listResponseResult = serviceMapClient.terminalAroundSearch(center, radius);
 
-            log.info("在半径为：" + radius + "的范围内，寻找车辆，结果：" + JSONArray.fromObject(listResponseResult.getData().toString()));
+            log.info("在半径为" + radius + "的范围内，寻找车辆,结果：" + JSONArray.fromObject(listResponseResult.getData()).toString());
 
-            // 获得终端
+            // 获得终端     [{carId":"1654466519742111745","tid":683060559}]
 
             // 解析终端
+            JSONArray result = JSONArray.fromObject(listResponseResult.getData());
+            for (int j = 0; j < result.size(); j++) {
+                JSONObject jsonObject = result.getJSONObject(j);
+                String carIdString = jsonObject.getString("carId");
+                Long carId = Long.parseLong(carIdString);
+                log.info("carId：" + carId);
+            }
 
             // 根据解析出来的终端，查询车辆信息
 
