@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/MapDirectionClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/interceptor/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/TrackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/TrackClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/controller/PriceRuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/controller/PriceRuleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/1000phone/SourceCode/ljsmr/520ljs-mryy",
+    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -433,7 +433,9 @@
       <workItem from="1684572988990" duration="6715000" />
       <workItem from="1684742622892" duration="1869000" />
       <workItem from="1684803483871" duration="3938000" />
-      <workItem from="1684890991628" duration="23576000" />
+      <workItem from="1684890991628" duration="23872000" />
+      <workItem from="1684976624935" duration="4021000" />
+      <workItem from="1684994862225" duration="3943000" />
     </task>
     <servers />
   </component>

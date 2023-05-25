@@ -83,6 +83,8 @@ public class OrderInfoService {
         }
 
         // 需要判断计价规则的版本是否为最新
+        String fareType = orderRequest.getFareType();
+        log.info("fareType：" + fareType);
         ResponseResult<Boolean> aNew = servicePriceClient.isNew(orderRequest.getFareType(), orderRequest.getFareVersion());
         if (!aNew.getData()) {
             return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_CHANGED.getCode(), CommonStatusEnum.PRICE_RULE_CHANGED.getValue(), "");

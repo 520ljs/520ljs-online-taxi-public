@@ -47,10 +47,14 @@ public class TrackClient {
         url.append("sid="+amapSid);
         url.append("&");
         url.append("tid="+tid);
+
         log.info("高德地图创建轨迹请求："+url);
+
         ResponseEntity<String> stringResponseEntity = restTemplate.postForEntity(url.toString(), null, String.class);
         String body = stringResponseEntity.getBody();
+
         log.info("高德地图创建轨迹响应："+body);
+
         JSONObject result = JSONObject.fromObject(body);
         JSONObject data = result.getJSONObject("data");
         // 轨迹id
