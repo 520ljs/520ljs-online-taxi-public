@@ -3,6 +3,7 @@ package com.ss.serviceprice.controller;
 
 import com.ss.internalcommon.dto.PriceRule;
 import com.ss.internalcommon.dto.ResponseResult;
+import com.ss.internalcommon.request.PriceRuleIsNewRequest;
 import com.ss.serviceprice.service.PriceRuleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -65,14 +66,12 @@ public class PriceRuleController {
     /**
      * 判断规则是否是最新
      *
-     * @param fareType
-     * @param fareVersion
+     * @param priceRuleIsNewRequest
      * @return
      */
-    @GetMapping("/is-new")
-    public ResponseResult<Boolean> isNew(@RequestParam String fareType, @RequestParam Integer fareVersion) {
-        fareType = fareType.replace("%24","$");
-        return priceRuleService.isNew(fareType, fareVersion);
+    @PostMapping("/is-new")
+    public ResponseResult<Boolean> isNew(@RequestBody PriceRuleIsNewRequest priceRuleIsNewRequest) {
+        return priceRuleService.isNew(priceRuleIsNewRequest.getFareType(), priceRuleIsNewRequest.getFareVersion());
     }
 
     /**

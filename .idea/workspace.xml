@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-driver/src/main/java/com/ss/apidriver/interceptor/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/TrackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-map/src/main/java/com/ss/servicemap/remote/TrackClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/request/PriceRuleIsNewRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/remote/ServicePriceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/remote/ServicePriceClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/controller/PriceRuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-price/src/main/java/com/ss/serviceprice/controller/PriceRuleController.java" afterDir="false" />
     </list>
@@ -299,6 +299,7 @@
       <item itemvalue="Compound.预估价格服务系列" />
       <item itemvalue="Compound.乘客用户服务中心系列1" />
       <item itemvalue="Compound.乘客用户服务中心系列2" />
+      <item itemvalue="Spring Boot.ServiceMapApplication" />
       <item itemvalue="Spring Boot.ServiceOrderApplication" />
       <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ApiBossApplication" />
@@ -307,7 +308,6 @@
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePriceApplication" />
-      <item itemvalue="Spring Boot.ServiceMapApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -436,6 +436,10 @@
       <workItem from="1684890991628" duration="23872000" />
       <workItem from="1684976624935" duration="4021000" />
       <workItem from="1684994862225" duration="3943000" />
+      <workItem from="1685062722013" duration="1881000" />
+      <workItem from="1685156949398" duration="305000" />
+      <workItem from="1685157263613" duration="5014000" />
+      <workItem from="1685324561718" duration="6034000" />
     </task>
     <servers />
   </component>
@@ -455,6 +459,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
