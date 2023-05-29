@@ -50,6 +50,8 @@ public class OrderInfoController {
 
         log.info("service-order" + orderRequest.getAddress());
 
+        System.out.println(orderInfoService.add(orderRequest));
+
         return orderInfoService.add(orderRequest);
     }
 }

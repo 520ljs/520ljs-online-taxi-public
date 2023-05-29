@@ -8,6 +8,7 @@ import com.ss.internalcommon.dto.PriceRule;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.OrderRequest;
 import com.ss.internalcommon.request.PriceRuleIsNewRequest;
+import com.ss.internalcommon.response.OrderDriverResponse;
 import com.ss.internalcommon.response.TerminalResponse;
 import com.ss.internalcommon.util.RedisPrefixUtils;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
@@ -94,6 +95,7 @@ public class OrderInfoService {
 
         // 需要判断 下单的设备是否是 黑名单设备
         if (isBlackDevice(orderRequest)) {
+            System.out.println(ResponseResult.fail(CommonStatusEnum.DEVICE_IS_BLACK.getCode(), CommonStatusEnum.DEVICE_IS_BLACK.getValue(), ""));
             return ResponseResult.fail(CommonStatusEnum.DEVICE_IS_BLACK.getCode(), CommonStatusEnum.DEVICE_IS_BLACK.getValue(), "");
         }
 
@@ -217,6 +219,7 @@ public class OrderInfoService {
 
         // 搜索结果
         ResponseResult<List<TerminalResponse>> listResponseResult = null;
+        radius:
         for (int i = 0; i < radiusList.size(); i++) {
             Integer radius = radiusList.get(i);
             listResponseResult = serviceMapClient.terminalAroundSearch(center, radius);
@@ -232,6 +235,17 @@ public class OrderInfoService {
                 String carIdString = jsonObject.getString("carId");
                 Long carId = Long.parseLong(carIdString);
                 log.info("carId：" + carId);
+
+                // 查询是否有对应的可派单司机
+                ResponseResult<OrderDriverResponse> availableDriver = serviceDriverUserClient.getAvailableDriver(carId);
+                if (availableDriver.getCode() == CommonStatusEnum.AVAILABLE_DRIVER_EMPTY.getCode()) {
+                    log.info("没有车辆ID为：" + carId + "对应的司机");
+                    continue radius;
+                } else {
+                    log.info("找到了正在出车的司机，它的车辆ID为：" + carId);
+                    break radius;
+                }
+
             }
 
             // 根据解析出来的终端，查询车辆信息

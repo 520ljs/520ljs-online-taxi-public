@@ -31,8 +31,8 @@ public class OrderController {
     public ResponseResult add(@RequestBody OrderRequest orderRequest) {
 
         System.out.println(orderRequest);
-        orderService.add(orderRequest);
-        return ResponseResult.success("");
+
+        return orderService.add(orderRequest);
     }
 
 }
