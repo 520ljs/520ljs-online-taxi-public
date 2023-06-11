@@ -13,7 +13,7 @@ public class TerminalResponse {
 
     private Long carId;
 
-    private Long longitude;
+    private String longitude;
 
-    private Long latitude;
+    private String latitude;
 }

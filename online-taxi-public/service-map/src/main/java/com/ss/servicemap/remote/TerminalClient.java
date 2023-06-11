@@ -121,8 +121,8 @@ public class TerminalClient {
 
             // 根据location获取 经度 维度
             JSONObject location = jsonObject.getJSONObject("location");
-            long longitude = location.getLong("longitude");
-            long latitude = location.getLong("latitude");
+            String  longitude = location.getString("longitude");
+            String latitude = location.getString("latitude");
 
             terminalResponse.setCarId(carId);
             terminalResponse.setTid(tid);

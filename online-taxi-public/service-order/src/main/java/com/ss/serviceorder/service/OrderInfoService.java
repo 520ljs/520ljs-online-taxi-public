@@ -252,15 +252,15 @@ public class OrderInfoService {
             // 获得终端     [{carId":"1654466519742111745","tid":683060559}]
 
             // 解析终端
-            JSONArray result = JSONArray.fromObject(listResponseResult.getData());
-            for (int j = 0; j < result.size(); j++) {
-                JSONObject jsonObject = result.getJSONObject(j);
-                String carIdString = jsonObject.getString("carId");
-                Long carId = Long.parseLong(carIdString);
+            List<TerminalResponse> data = listResponseResult.getData();
+            for (int j = 0; j < data.size(); j++) {
+                TerminalResponse terminalResponse = data.get(j);
+                Long carId = terminalResponse.getCarId();
                 log.info("carId：" + carId);
 
-                long longitude = jsonObject.getLong("longitude");
-                long latitude = jsonObject.getLong("latitude");
+                // 经纬度
+                String longitude = terminalResponse.getLongitude();
+                String latitude = terminalResponse.getLatitude();
 
                 // 查询是否有对应的可派单司机
                 ResponseResult<OrderDriverResponse> availableDriver = serviceDriverUserClient.getAvailableDriver(carId);
@@ -270,12 +270,13 @@ public class OrderInfoService {
                 } else {
                     log.info("找到了正在出车的司机，它的车辆ID为：" + carId);
 
+                    // 获取需要的数据
                     OrderDriverResponse orderDriverResponse = availableDriver.getData();
                     Long driverId = orderDriverResponse.getDriverId();
                     String driverPhone = orderDriverResponse.getDriverPhone();
                     String licenseId = orderDriverResponse.getLicenseId();
                     String vehicleNo = orderDriverResponse.getVehicleNo();
-                    String vehicleTypeFromCar = orderDriverResponse.getVehicleType();
+                    // String vehicleTypeFromCar = orderDriverResponse.getVehicleType();
 
                     // 判断司机 是否有进行中的订单
                     if (isDriverOrderGoing(driverId) > 0) {
@@ -287,14 +288,13 @@ public class OrderInfoService {
                     QueryWrapper<Car> carQueryWrapper = new QueryWrapper<>();
                     carQueryWrapper.eq("id", carId);
 
-
                     // 设置订单中和司机车辆相关的信息
                     orderInfo.setDriverId(driverId);
                     orderInfo.setDriverPhone(driverPhone);
                     orderInfo.setCarId(carId);
-                    // 从地图中来
-                    orderInfo.setReceiveOrderCarLongitude(longitude + "");
-                    orderInfo.setReceiveOrderCarLatitude(latitude + "");
+                    // 从地图中得到的经纬度
+                    orderInfo.setReceiveOrderCarLongitude(longitude);
+                    orderInfo.setReceiveOrderCarLatitude(latitude);
 
                     orderInfo.setReceiveOrderTime(LocalDateTime.now());
                     orderInfo.setLicenseId(licenseId);
