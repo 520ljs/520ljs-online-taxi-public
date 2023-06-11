@@ -5,6 +5,7 @@ import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.serviceorder.ServiceOrderApplication;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
 import com.ss.serviceorder.service.OrderInfoService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,10 +17,11 @@ import javax.annotation.Resource;
  * @Date:2023/5/6 - 05 - 06 - 11:12
  */
 @RestController
+@Slf4j
 public class TestController {
 
     @Resource
-    OrderInfoService serviceOrderClient;
+    OrderInfoService orderInfoService;
 
     @Resource
     OrderInfoMapper orderInfoMapper;
@@ -38,8 +40,10 @@ public class TestController {
     @GetMapping("/test-real-time-order/{orderId}")
     public String dispatchRealTimeOrder(@PathVariable("orderId") long orderId){
         OrderInfo orderInfo = orderInfoMapper.selectById(orderId);
-        serviceOrderClient.dispatchRealTimeOrder(orderInfo);
+        log.info(String.valueOf(orderInfo));
+        orderInfoService.dispatchRealTimeOrder(orderInfo);
         return "test-real-time-order   success";
     }
+
 
 }

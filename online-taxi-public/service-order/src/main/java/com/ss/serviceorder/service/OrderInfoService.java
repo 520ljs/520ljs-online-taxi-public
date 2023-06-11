@@ -15,7 +15,6 @@ import com.ss.serviceorder.mapper.OrderInfoMapper;
 import com.ss.serviceorder.remote.ServiceDriverUserClient;
 import com.ss.serviceorder.remote.ServiceMapClient;
 import com.ss.serviceorder.remote.ServicePriceClient;
-import javafx.scene.layout.BorderImage;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -95,7 +94,6 @@ public class OrderInfoService {
 
         // 需要判断 下单的设备是否是 黑名单设备
         if (isBlackDevice(orderRequest)) {
-            System.out.println(ResponseResult.fail(CommonStatusEnum.DEVICE_IS_BLACK.getCode(), CommonStatusEnum.DEVICE_IS_BLACK.getValue(), ""));
             return ResponseResult.fail(CommonStatusEnum.DEVICE_IS_BLACK.getCode(), CommonStatusEnum.DEVICE_IS_BLACK.getValue(), "");
         }
 
@@ -148,6 +146,30 @@ public class OrderInfoService {
         );
 
         Integer validOrderNumber = orderInfoMapper.selectCount(queryWrapper);
+
+        return validOrderNumber;
+    }
+
+    /**
+     * 判断司机 是否有正在进行中的订单
+     *
+     * @param driverId
+     * @return
+     */
+    private int isDriverOrderGoing(Long driverId) {
+        // 判断 司机 有正在进行的订单不允许下单
+        QueryWrapper<OrderInfo> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("driver_id", driverId);
+        queryWrapper.and(wrapper -> wrapper
+                .eq("order_status", OrderConstants.DRIVER_RECEIVE_ORDER)
+                .or().eq("order_status", OrderConstants.DRIVER_TO_PICK_UP_PASSENGER)
+                .or().eq("order_status", OrderConstants.DRIVER_ARRIVED_DEPARTURE)
+                .or().eq("order_status", OrderConstants.PICK_UP_PASSENGER)
+
+        );
+
+        Integer validOrderNumber = orderInfoMapper.selectCount(queryWrapper);
+        log.info("司机的Id：" + driverId + "，正在进行的订单的数量：" + validOrderNumber);
 
         return validOrderNumber;
     }
@@ -243,6 +265,16 @@ public class OrderInfoService {
                     continue radius;
                 } else {
                     log.info("找到了正在出车的司机，它的车辆ID为：" + carId);
+
+                    // 获取司机id
+                    OrderDriverResponse orderDriverResponse = availableDriver.getData();
+                    Long driverId = orderDriverResponse.getDriverId();
+
+                    // 判断司机 是否有进行中的订单
+                    if (isDriverOrderGoing(driverId) > 0) {
+                        continue;
+                    }
+
                     break radius;
                 }
 

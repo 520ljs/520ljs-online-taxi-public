@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87cf6489-974b-49bf-af19-0ba604f3d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/api-passenger/src/main/java/com/ss/application/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/OrderDriverResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/internal-common/src/main/java/com/ss/internalcommon/response/OrderDriverResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-driver-user/src/main/java/com/ss/servicedriveruser/service/DriverUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/controller/OrderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/controller/OrderInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/remote/ServiceDriverUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/remote/ServiceDriverUserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/java/com/ss/serviceorder/service/OrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-taxi-public/service-order/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/520ljs-online-taxi-public",
+    "last_opened_file_path": "D:/Java/SourceCode/IDEA_workspace/GitHub/taxi/online-taxi-2022-public/online-taxi-2022-public-master/online-taxi-public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,7 +96,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.25862068",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "settings.editor.selected.configurable": "fileTemplates",
     "settings.editor.splitter.proportion": "0.23316498",
     "spring.configuration.checksum": "ea1596292b30563248b9ad1cbfdd3cda",
     "vue.rearranger.settings.migration": "true"
@@ -440,7 +440,16 @@
       <workItem from="1685062722013" duration="1881000" />
       <workItem from="1685156949398" duration="305000" />
       <workItem from="1685157263613" duration="5014000" />
-      <workItem from="1685324561718" duration="20710000" />
+      <workItem from="1685324561718" duration="20853000" />
+      <workItem from="1685409338246" duration="8907000" />
+      <workItem from="1685512066037" duration="623000" />
+      <workItem from="1685584871402" duration="2703000" />
+      <workItem from="1685851097835" duration="12000" />
+      <workItem from="1685978506783" duration="2688000" />
+      <workItem from="1686011121856" duration="1205000" />
+      <workItem from="1686183784465" duration="23377000" />
+      <workItem from="1686299122748" duration="1810000" />
+      <workItem from="1686468910865" duration="1956000" />
     </task>
     <servers />
   </component>

@@ -14,5 +14,4 @@ public class OrderDriverResponse {
     private String driverPhone;
 
     private Long carId;
-
 }

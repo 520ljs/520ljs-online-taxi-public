@@ -143,7 +143,7 @@ public class DriverUserService {
             orderDriverResponse.setDriverId(driverId);
             orderDriverResponse.setDriverPhone(driverUser.getDriverPhone());
 
-            return ResponseResult.success(orderDriverResponse + "");
+            return ResponseResult.success(orderDriverResponse);
         }
     }
 }
