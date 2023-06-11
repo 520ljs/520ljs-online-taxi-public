@@ -33,27 +33,28 @@ public class TerminalClient {
 
     /**
      * 创建终端
+     *
      * @param name
      * @param desc
      * @return
      */
-    public ResponseResult<TerminalResponse> add(String name , String desc){
+    public ResponseResult<TerminalResponse> add(String name, String desc) {
 
         // &key=<用户的key>
         // 拼装请求的url
         StringBuilder url = new StringBuilder();
         url.append(AmapConfigConstants.TERMINAL_ADD);
         url.append("?");
-        url.append("key="+amapKey);
+        url.append("key=" + amapKey);
         url.append("&");
-        url.append("sid="+amapSid);
+        url.append("sid=" + amapSid);
         url.append("&");
-        url.append("name="+name);
+        url.append("name=" + name);
         url.append("&");
-        url.append("desc="+desc);
-        System.out.println("创建终端请求："+url.toString());
+        url.append("desc=" + desc);
+        System.out.println("创建终端请求：" + url.toString());
         ResponseEntity<String> stringResponseEntity = restTemplate.postForEntity(url.toString(), null, String.class);
-        System.out.println("创建终端响应："+stringResponseEntity.getBody());
+        System.out.println("创建终端响应：" + stringResponseEntity.getBody());
         /**
          * {
          *     "data": {
@@ -74,30 +75,31 @@ public class TerminalClient {
         TerminalResponse terminalResponse = new TerminalResponse();
         terminalResponse.setTid(tid);
 
-        return  ResponseResult.success(terminalResponse);
+        return ResponseResult.success(terminalResponse);
     }
 
     /**
      * 终端搜索
+     *
      * @param center
      * @param radius
      * @return
      */
-    public ResponseResult<List<TerminalResponse>> aroundsearch(String center, Integer radius){
+    public ResponseResult<List<TerminalResponse>> aroundsearch(String center, Integer radius) {
         StringBuilder url = new StringBuilder();
         url.append(AmapConfigConstants.TERMINAL_AROUNDSEARCH);
         url.append("?");
-        url.append("key="+amapKey);
+        url.append("key=" + amapKey);
         url.append("&");
-        url.append("sid="+amapSid);
+        url.append("sid=" + amapSid);
         url.append("&");
-        url.append("center="+center);
+        url.append("center=" + center);
         url.append("&");
-        url.append("radius="+radius);
+        url.append("radius=" + radius);
 
-        System.out.println("终端搜索请求："+url.toString());
+        System.out.println("终端搜索请求：" + url.toString());
         ResponseEntity<String> stringResponseEntity = restTemplate.postForEntity(url.toString(), null, String.class);
-        System.out.println("终端搜索响应："+stringResponseEntity.getBody());
+        System.out.println("终端搜索响应：" + stringResponseEntity.getBody());
 
         // 解析终端搜索结果
         String body = stringResponseEntity.getBody();
@@ -107,7 +109,7 @@ public class TerminalClient {
         List<TerminalResponse> terminalResponseList = new ArrayList<>();
 
         JSONArray results = data.getJSONArray("results");
-        for (int i=0;i<results.size();i++){
+        for (int i = 0; i < results.size(); i++) {
             TerminalResponse terminalResponse = new TerminalResponse();
 
             JSONObject jsonObject = results.getJSONObject(i);
@@ -117,8 +119,15 @@ public class TerminalClient {
             Long carId = Long.parseLong(desc);
             String tid = jsonObject.getString("tid");
 
+            // 根据location获取 经度 维度
+            JSONObject location = jsonObject.getJSONObject("location");
+            long longitude = location.getLong("longitude");
+            long latitude = location.getLong("latitude");
+
             terminalResponse.setCarId(carId);
             terminalResponse.setTid(tid);
+            terminalResponse.setLongitude(longitude);
+            terminalResponse.setLatitude(latitude);
 
             terminalResponseList.add(terminalResponse);
         }
