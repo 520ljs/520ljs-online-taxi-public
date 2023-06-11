@@ -27,21 +27,25 @@ public class TestController {
     OrderInfoMapper orderInfoMapper;
 
     @GetMapping("/test")
-    public ResponseResult test(){
+    public ResponseResult test() {
 
         return ResponseResult.success("bql xnh");
     }
 
     /**
      * 测试派单逻辑
+     *
      * @param orderId
      * @return
      */
     @GetMapping("/test-real-time-order/{orderId}")
-    public String dispatchRealTimeOrder(@PathVariable("orderId") long orderId){
-        OrderInfo orderInfo = orderInfoMapper.selectById(orderId);
+    public String dispatchRealTimeOrder(@PathVariable("orderId") long orderId) {
+
+        log.info("并发测试：orderId：" + orderId);
+
+        /*OrderInfo orderInfo = orderInfoMapper.selectById(orderId);
         log.info(String.valueOf(orderInfo));
-        orderInfoService.dispatchRealTimeOrder(orderInfo);
+        orderInfoService.dispatchRealTimeOrder(orderInfo);*/
         return "test-real-time-order   success";
     }
 
