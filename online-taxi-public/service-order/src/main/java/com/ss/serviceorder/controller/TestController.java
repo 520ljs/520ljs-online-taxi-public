@@ -2,7 +2,6 @@ package com.ss.serviceorder.controller;
 
 import com.ss.internalcommon.dto.OrderInfo;
 import com.ss.internalcommon.dto.ResponseResult;
-import com.ss.serviceorder.ServiceOrderApplication;
 import com.ss.serviceorder.mapper.OrderInfoMapper;
 import com.ss.serviceorder.service.OrderInfoService;
 import lombok.extern.slf4j.Slf4j;
@@ -43,9 +42,9 @@ public class TestController {
 
         log.info("并发测试：orderId：" + orderId);
 
-        /*OrderInfo orderInfo = orderInfoMapper.selectById(orderId);
+        OrderInfo orderInfo = orderInfoMapper.selectById(orderId);
         log.info(String.valueOf(orderInfo));
-        orderInfoService.dispatchRealTimeOrder(orderInfo);*/
+        orderInfoService.dispatchRealTimeOrder(orderInfo);
         return "test-real-time-order   success";
     }
 
