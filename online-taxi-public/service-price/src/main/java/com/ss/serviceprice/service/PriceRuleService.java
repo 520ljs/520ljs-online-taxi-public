@@ -5,7 +5,6 @@ import com.ss.internalcommon.constant.CommonStatusEnum;
 import com.ss.internalcommon.dto.PriceRule;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.serviceprice.mapper.PriceRuleMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

@@ -1,14 +1,10 @@
 package com.ss.serviceprice.controller;
 
-
 import com.ss.internalcommon.dto.PriceRule;
 import com.ss.internalcommon.dto.ResponseResult;
 import com.ss.internalcommon.request.PriceRuleIsNewRequest;
 import com.ss.serviceprice.service.PriceRuleService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
 
