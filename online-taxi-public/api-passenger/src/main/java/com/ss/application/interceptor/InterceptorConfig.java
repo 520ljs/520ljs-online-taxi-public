@@ -16,7 +16,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
     // 在拦截器初始化之前。bean已经提前有了，拦截器里面的bean都会一个个注入进去
     @Bean
-    public JwtInterceptor jwtInterceptor(){
+    public JwtInterceptor jwtInterceptor() {
         return new JwtInterceptor();
     }
 
@@ -29,6 +29,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/noauthTest")
                 .excludePathPatterns("/verification-code")
                 .excludePathPatterns("/verification-code-check")
-                .excludePathPatterns("/token-refresh");
+                .excludePathPatterns("/token-refresh")
+                .excludePathPatterns("/test-real-time-order/**");
     }
 }
