@@ -10,6 +10,16 @@
 <div id="message">展示服务的推送过来消息的地方<br></div>
 
 <script>
+    driverId = 1;
+
+    if (window.EventSource) {
+        console.log("此浏览器支持SSE");
+        // 连接的建立
+        source = new EventSource("http://localhost:9000/connect/" + driverId);
+    } else {
+        setMessageContent("此浏览器不支持");
+    }
+
     function setMessageContent(content) {
         document.getElementById("message").innerHTML += (content + '</br>')
     }
