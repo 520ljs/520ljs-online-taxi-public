@@ -22,6 +22,7 @@ public class SseController {
 
     /**
      * 建立连接
+     *
      * @param driverId
      * @return
      */
@@ -37,19 +38,33 @@ public class SseController {
 
     /**
      * 发送消息
+     *
      * @param driverId 消息接受者
-     * @param content 消息内容
+     * @param content  消息内容
      * @return
      */
     @GetMapping("/push")
     public String push(@RequestParam String driverId, @RequestParam String content) {
         try {
-            sseEmitterMap.get(driverId).send(content);
+            if (sseEmitterMap.containsKey(driverId)) {
+                sseEmitterMap.get(driverId).send(content);
+            } else {
+                return "推送失败";
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
         return "给用户：" + driverId + "，发送了消息" + content;
+    }
+
+    @GetMapping("/close/{driverId}")
+    public String close(@PathVariable String driverId) {
+        System.out.println("关闭连接：" + driverId);
+        if (sseEmitterMap.containsKey(driverId)) {
+            sseEmitterMap.remove(driverId);
+        }
+        return "close 成功";
     }
 
 }
