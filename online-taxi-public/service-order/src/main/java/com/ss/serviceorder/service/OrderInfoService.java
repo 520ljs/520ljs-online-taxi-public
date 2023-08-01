@@ -19,6 +19,8 @@ import com.ss.serviceorder.remote.ServicePriceClient;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -56,6 +58,9 @@ public class OrderInfoService {
 
     @Resource
     ServiceMapClient serviceMapClient;
+
+    @Resource
+    RedissonClient redissonClient;
 
     /**
      * 测试添加数据
@@ -227,7 +232,7 @@ public class OrderInfoService {
      *
      * @param orderInfo
      */
-    public synchronized void dispatchRealTimeOrder(OrderInfo orderInfo) {
+    public void dispatchRealTimeOrder(OrderInfo orderInfo) {
 
         // 2km
         String depLatitude = orderInfo.getDepLatitude();
@@ -278,8 +283,14 @@ public class OrderInfoService {
                     String vehicleNo = orderDriverResponse.getVehicleNo();
                     // String vehicleTypeFromCar = orderDriverResponse.getVehicleType();
 
+                    String lockKye = (driverId + "").intern();
+                    // 锁
+                    RLock lock = redissonClient.getLock(lockKye);
+                    lock.lock();
+
                     // 判断司机 是否有进行中的订单
                     if (isDriverOrderGoing(driverId) > 0) {
+                        lock.unlock();
                         continue;
                     }
 
@@ -303,9 +314,10 @@ public class OrderInfoService {
 
                     orderInfoMapper.updateById(orderInfo);
 
+                    // 释放锁
+                    lock.unlock();
+
                     break radius;
-
-
                 }
 
             }
