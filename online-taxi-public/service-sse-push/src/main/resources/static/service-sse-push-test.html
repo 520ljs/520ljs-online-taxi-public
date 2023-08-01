@@ -12,39 +12,40 @@
 <button onclick="sourceClose()">关闭连接</button>
 
 <script>
-    driverId = 1;
+    userId = "1";
+    identity = 1;
     source = null;
 
-    if (window.EventSource) {
-        console.log("此浏览器支持SSE");
+    if(window.EventSource){
+        console.info("此浏览器支持SSE");
         // 连接的建立
-        source = new EventSource("http://localhost:9000/connect/" + driverId);
+        source = new EventSource("http://localhost:9000/connect?userId="+userId+"&identity="+identity);
 
-        // 监听服务的推送消息
-        source.addEventListener("message", function (e) {
-            connect = e.data;
-            console.info("消息内容：" + connect)
-            setMessageContent(connect)
-        })
-    } else {
+        // 监听服务的推送的消息
+        source.addEventListener("message",function (e){
+            content = e.data;
+            console.info("消息内容："+content);
+
+            setMessageContent(content);
+        });
+
+    }else {
         setMessageContent("此浏览器不支持");
     }
 
-    function setMessageContent(content) {
-        document.getElementById("message").innerHTML += (content + '</br>')
+    function setMessageContent(content){
+        document.getElementById("message").innerHTML+= (content+'</br>');
     }
 
-    // 关闭连接
-    function sourceClose() {
+    function sourceClose(){
         console.info("close方法执行");
         // 客户端source的关闭
         source.close();
         // 服务端map的移除
         httpRequest = new XMLHttpRequest();
-        httpRequest.open("get", "http://localhost:9000/close/" + driverId);
+        httpRequest.open("get","http://localhost:9000/close?userId="+userId+"&identity="+identity);
         httpRequest.send();
     }
-
 </script>
 
 </body>
