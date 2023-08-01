@@ -10,12 +10,20 @@ import org.springframework.stereotype.Component;
 @Component
 public class RedisConfig {
 
+    private String potocol = "redis://";
+
+    @Value("${spring.redis.host}")
+    private String redisHost;
+
+    @Value("${spring.redis.port}")
+    private String redisPort;
+
     @Bean
     public RedissonClient redissonClient() {
         Config config = new Config();
 
         // 单个服务
-        config.useSingleServer().setAddress("redis://127.0.0.1:6319").setDatabase(0);
+        config.useSingleServer().setAddress(potocol + redisHost + ":" + redisPort).setDatabase(0);
 
         return Redisson.create(config);
 
