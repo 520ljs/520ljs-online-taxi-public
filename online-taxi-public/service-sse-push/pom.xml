@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sse-driver-client-web</artifactId>
+    <artifactId>service-sse-push</artifactId>
 
     <properties>
         <java.version>8</java.version>
