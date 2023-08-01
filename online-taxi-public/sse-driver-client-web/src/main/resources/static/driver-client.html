@@ -6,5 +6,14 @@
 </head>
 <body>
 <h1>司机监听测试页面-模拟司机客户端</h1>
+<button onclick="setMessageContent('鼠标点我了')">测试message展示</button>
+<div id="message">展示服务的推送过来消息的地方<br></div>
+
+<script>
+    function setMessageContent(content) {
+        document.getElementById("message").innerHTML += (content + '</br>')
+    }
+</script>
+
 </body>
 </html>
