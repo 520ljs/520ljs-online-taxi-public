@@ -1,4 +1,4 @@
-package com.ss.ssedriverclientweb.controller;
+package com.ss.servicessepush.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
